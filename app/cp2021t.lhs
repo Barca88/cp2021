@@ -815,7 +815,39 @@ type OutExpAr a = Either () (Either a (Either (BinOp, (ExpAr a, ExpAr a)) (UnOp,
 \subsection*{Problema 2}
 Definição da série de Catalan usando factoriais (\ref{eq:cat}):
 \begin{code}
+
+catdef n = prj . for loop init $ n where
+  loop (f, n) = (div ((4 * n + 2) * f) (n + 2), n + 1)
+  init = (1, 0)
+  prj = p1
+  {--
+catdef n = prj . for loop init $ n where
+  loop(c,f,g) = ((div f g) * c,(4+) f, (1+) g)
+  init = (1,2,2)
+  prj(a,b,c) = a
+
 catdef n = div (fac((2*n))) ((fac((n+1))*(fac n)))
+catdef n = prj . for loop init $ n where
+  loop(c,cima,baixo) = ((div cima baixo) * c,(6+) . (4*) $ cima, (3+) baixo)
+  init = (1,2,2)
+  prj(a,b,c) = a
+-
+catdef n = prj . for loop init $ n where
+  loop (c,cima,baixo) = ( (div cima baixo) * c,(2+) . (4*) $ cima,(2+) baixo)
+  init = (1,2,2)
+  prj (c,cima,baixo) = c
+
+catdef n = p1 . for loop init where
+  loop(c,frac) = ((4-) . frac + c,(2/) . (3+) . frac)
+  init = (1,1)
+  
+catdef n = prj . for loop init where
+  loop (c,cima,baixo) = ( (div cima baixo) * c,(6+) . (4*) ,(3+))
+  init = (1,2,2)
+  prj (c,cima,baixo) = c
+-- | loop (c,aux) = (mul aux c,div (mul (const 2) (succ . (mul (const 2) succ)) (succ . succ . succ)))
+--  init = (1,1)
+--}
 \end{code}
 Oráculo para inspecção dos primeiros 26 números de Catalan\footnote{Fonte:
 \catalan{Wikipedia}.}:
