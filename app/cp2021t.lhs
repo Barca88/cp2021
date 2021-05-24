@@ -1048,49 +1048,6 @@ cat n = prj . for loop init $ n where
   loop (f, g) = ((div) ((4 * g + 2) * f) (g + 2), g + 1)
   init = (1, 0)
   prj = p1
-  {--
-cat n = prj . for loop init $ n where
-  loop(c,f,g,h) = (f * c,f + (div 6 g), g + h, h + 2)
-  init = (1,1,6,6)
-  prj(a,b,c,d) = a
-
-cat n = prj . for loop init $ n where
-  loop(c,f,g,h) = (f * c,f + (div 6 g), g + h,(2+) h)
-  init = (1,1,6,6)
-  prj(a,b,c,d) = a
-
-cat n = prj . for loop init $ n where
-  loop (f, n) = (div ((4 * n + 2) * f) (n + 2), n + 1)
-  init = (1, 0)
-  prj = p1
-
-cat n = prj . for loop init $ n where
-  loop(c,f,g) = ((div f g) * c,(4+) f, (1+) g)
-  init = (1,2,2)
-  prj(a,b,c) = a
-
-cat n = div (fac((2*n))) ((fac((n+1))*(fac n)))
-cat n = prj . for loop init $ n where
-  loop(c,cima,baixo) = ((div cima baixo) * c,(6+) . (4*) $ cima, (3+) baixo)
-  init = (1,2,2)
-  prj(a,b,c) = a
--
-cat n = prj . for loop init $ n where
-  loop (c,cima,baixo) = ( (div cima baixo) * c,(2+) . (4*) $ cima,(2+) baixo)
-  init = (1,2,2)
-  prj (c,cima,baixo) = c
-
-cat n = p1 . for loop init where
-  loop(c,frac) = ((4-) . frac + c,(2/) . (3+) . frac)
-  init = (1,1)
-  
-cat n = prj . for loop init where
-  loop (c,cima,baixo) = ( (div cima baixo) * c,(6+) . (4*) ,(3+))
-  init = (1,2,2)
-  prj (c,cima,baixo) = c
--- | loop (c,aux) = (mul aux c,div (mul (const 2) (succ . (mul (const 2) succ)) (succ . succ . succ)))
---  init = (1,1)
---}
 
 \end{code}
 \begin{figure}[h!]
@@ -1098,8 +1055,8 @@ cat n = prj . for loop init where
   \includegraphics[width=0.8\textwidth]{cp2021t_media/Cn+1.png}
   \caption{Calculos para chegar á formula obtida}
 \end{figure}
-g = n 
-g 0 = 0
+g = n ;
+g 0 = 0 ;
 g n+1 = n+1
 \subsection*{Problema 3}
 
