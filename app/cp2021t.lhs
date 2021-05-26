@@ -206,6 +206,7 @@ import Graphics.Gloss.Interface.Pure.Game
 import Control.Monad
 import Control.Applicative hiding ((<|>))
 import System.Process
+import Data.Ratio
 \end{code}
 %endif
 
@@ -1043,11 +1044,10 @@ ad_gen = undefined
 \subsection*{Problema 2}
 
 \begin{code}
-
 cat n = prj . for loop init $ n where
-  loop (f, g) = ((div) ((4 * g + 2) * f) (g + 2), g + 1)
-  init = (1, 0)
-  prj = p1
+  loop(c,f,g,h) = (f * c,f + ( 6 % g), g + h, h + 2)
+  init = (1,1,6,6)
+  prj(a,b,c,d) = numerator a
 
 \end{code}
 \begin{figure}[h!]
