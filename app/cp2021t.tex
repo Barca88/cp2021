@@ -2103,8 +2103,83 @@ Juntando as duas funções no \ensuremath{\alt{\cdot }{\cdot }} que será o gene
 Inserir em baixo o código \Fsharp\ desenvolvido, entre \text{\tt \char92{}begin\char123{}verbatim\char125{}} e \text{\tt \char92{}end\char123{}verbatim\char125{}}:
 
 \begin{tabbing}\tt
-
+~\char47{}\char47{}~\char40{}1\char41{}~Datatype~definition~\\
+\tt ~type~BTree\char60{}\char39{}a\char39{}\char62{}~\char61{}\\
+\tt ~~~~~~~\char124{}~Empty\\
+\tt ~~~~~~~\char124{}~Node~of~a~\char42{}~of~BTree\char60{}\char39{}a\char62{}~\char42{}~BTree\char60{}\char39{}a\char62{}\\
+\tt ~let~inBTree~x~\char61{}~either~\char40{}const~Empty\char41{}~Node~x\\
+\tt ~let~outBTree~x~\char61{}\\
+\tt ~~~~~match~x~width\\
+\tt ~~~~~\char124{}~Empty~\char45{}\char62{}~left~\char40{}\char41{}\\
+\tt ~~~~~\char124{}~Node~\char40{}a\char44{}t1\char44{}t2\char41{}~\char45{}\char62{}~Right~\char40{}a\char44{}t1\char44{}t2\char41{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}2~Ana~\char43{}~cata~\char43{}~hylo\\
+\tt ~let~baseBTree~g~f~\char61{}~g~\char45{}\char124{}\char45{}~\char40{}g~\char62{}\char60{}~\char40{}f~\char62{}\char60{}~f\char41{}\char41{}\\
+\tt ~let~recBTree~f~\char61{}~baseBTree~id~f\\
+\tt ~let~rec~cataBTree~g~\char61{}~g~\char60{}\char60{}~\char40{}recBTree~\char40{}cataBTree~g\char41{}\char41{}~\char60{}\char60{}~outBTree\\
+\tt ~let~rec~anaBTree~g~\char61{}~inBTree~\char60{}\char60{}~\char40{}recBTree~\char40{}anaBTree~g\char41{}\char41{}~\char60{}\char60{}~g\\
+\tt ~let~hyloBTree~h~g~\char61{}~cataBTree~h~\char60{}\char60{}~anaBTree~g\\
+\tt ~\\
+\tt ~\char47{}\char47{}3~Map\\
+\tt ~let~fmap~f~\char61{}~cataBTree~\char40{}inBTree~\char60{}\char60{}~baseBTree~f~id\char41{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}4\\
+\tt ~\char47{}\char47{}4\char46{}1\\
+\tt ~let~invBTree~x~\char61{}~cataBTree~\char40{}invLTree~\char60{}\char60{}~\char40{}id~\char45{}\char124{}\char45{}~id~\char62{}\char60{}~swap\char41{}\char41{}~x\\
+\tt ~\char40{}\char42{}~Recall~the~pointwise~version\char58{}\\
+\tt ~invBTree~\char40{}\char41{}~Empty\\
+\tt ~invBTree~\char40{}Node~\char40{}a\char44{}\char40{}b\char44{}c\char41{}\char41{}\char41{}~\char61{}~Node\char40{}a\char44{}~\char40{}invBTree~c\char44{}~invBTree~b\char41{}\char41{}\\
+\tt ~\char42{}\char41{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}4\char46{}2\\
+\tt ~let~countBTree~x~\char61{}~cataBTree~\char40{}either~\char40{}const~0\char41{}~\char40{}succ~\char46{}~\char40{}uncurry~\char40{}\char43{}\char41{}\char41{}~\char46{}~p2\char41{}\char41{}~x\\
+\tt ~\\
+\tt ~\char47{}\char47{}4\char46{}3~serialization\\
+\tt ~let~inordt~x~\char61{}~cataBTree~inord~x\\
+\tt ~let~inordt~x~\char61{}~either~nil~join~x\\
+\tt ~~~~~where~join~\char40{}x\char44{}~\char40{}l\char44{}r\char41{}\char41{}~\char61{}~l~\char64{}~\char91{}x\char93{}~\char64{}~r\\
+\tt ~let~preordt~x~\char61{}~cataBTree~preord\\
+\tt ~let~preord~\char61{}~\char40{}either~nil~f\char41{}\\
+\tt ~~~~~where~f\char40{}x\char44{}~\char40{}l\char44{}r\char41{}\char41{}~\char61{}~x\char58{}~l~\char64{}~r\\
+\tt ~let~preord~\char61{}~cataBTree~\char40{}either~nil~f\char41{}\\
+\tt ~~~~~where~f\char40{}x\char44{}~\char40{}l\char44{}r\char41{}\char41{}~\char61{}~x\char58{}~l~\char64{}~r~\char64{}~\char91{}x\char93{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}4\char46{}4~quicksort\\
+\tt ~let~qSort~\char61{}~hyloBTree~inord~qsep\\
+\tt ~let~qsep~\char91{}\char93{}~\char61{}~Left~\char40{}\char41{}\\
+\tt ~let~qsep~\char40{}h\char58{}t\char41{}~\char61{}~Right~\char40{}h\char44{}~\char40{}s\char44{}l\char41{}\char41{}\\
+\tt ~~~~~where~\char40{}s\char44{}l\char41{}~\char61{}~part~\char40{}\char60{}h\char41{}~t\\
+\tt ~let~part~p~\char91{}\char93{}~\char61{}~\char40{}\char91{}\char93{}\char44{}\char91{}\char93{}\char41{}\\
+\tt ~let~part~p~\char40{}h\char58{}t\char41{}~\char124{}~p~h~\char61{}~let~\char40{}s\char44{}l\char41{}~\char61{}~part~p~t~in~\char40{}h\char58{}s\char44{}l\char41{}\\
+\tt ~~~~~~~~~~~~~~~~~~\char124{}~otherwise~\char61{}~let~\char40{}s\char44{}l\char41{}~\char61{}~part~p~t~in~\char40{}s\char44{}~h\char58{}l\char41{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}4\char46{}5~Traces\\
+\tt ~let~traces~x~\char61{}~cataBTree~\char40{}either~\char40{}const\char91{}\char91{}\char93{}\char93{}\char41{}~tunion\char41{}~x\\
+\tt ~let~tunion~\char40{}a\char44{}\char40{}l\char44{}r\char41{}\char41{}~\char61{}~union~\char40{}map~\char40{}a\char58{}\char41{}~l\char41{}~\char40{}map~\char40{}a\char58{}\char41{}~r\char41{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}~\char40{}5\char41{}~Depth~and~balancing~\char40{}using~mutual~recursion\char41{}~\\
+\tt ~balBTree~\char61{}~p1\char46{}baldepth\\
+\tt ~depthBTree~\char61{}~p2\char46{}baldepth\\
+\tt ~baldepth~\char61{}~cataBTree~g~where\\
+\tt ~~~~~~g~\char61{}~either~\char40{}const\char40{}True\char44{}1\char41{}\char41{}~\char40{}h\char46{}\char40{}id\char62{}\char60{}f\char41{}\char41{}\\
+\tt ~~~~~~h\char40{}a\char44{}\char40{}\char40{}b1\char44{}b2\char41{}\char44{}\char40{}d1\char44{}d2\char41{}\char41{}\char41{}~\char61{}~\char40{}b1~\char38{}\char38{}~b2~\char38{}\char38{}~abs\char40{}d1\char45{}d2\char41{}\char60{}\char61{}1\char44{}1\char43{}max~d1~d2\char41{}\\
+\tt ~~~~~~f\char40{}\char40{}b1\char44{}d1\char41{}\char44{}\char40{}b2\char44{}d2\char41{}\char41{}~\char61{}~\char40{}\char40{}b1\char44{}b2\char41{}\char44{}\char40{}d1\char44{}d2\char41{}\char41{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}~\char40{}6\char41{}~Going~polytipic~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\tt ~let~tnat~f~\char61{}~either~\char40{}const~mempty\char41{}~\char40{}theta~\char60{}\char60{}~\char40{}f~\char62{}\char60{}~theta\char41{}\char41{}\\
+\tt ~~~~~~~where~theta~\char61{}~uncurry~mappend\\
+\tt ~let~monBTree~f~\char61{}~cataBTree~\char40{}tnat~f\char41{}\\
+\tt ~\char47{}\char47{}~alternative~to~\char40{}4\char46{}2\char41{}~serialization~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\tt ~let~preordt\char39{}~\char61{}~monBTree~singl\\
+\tt ~\char47{}\char47{}~alternative~to~\char40{}4\char46{}1\char41{}~counting~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\tt ~countBTree\char39{}~\char61{}~monBTree~\char40{}const~\char40{}Sum~1\char41{}\char41{}\\
+\tt ~\\
+\tt ~\char47{}\char47{}~\char40{}7\char41{}~Zipper~\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\char45{}\\
+\tt ~let~plug~\char91{}\char93{}~t~\char61{}~t\\
+\tt ~let~plug~\char40{}\char40{}Dr~False~a~l\char41{}\char58{}z\char41{}~t~\char61{}~Node~\char40{}a\char44{}\char40{}plug~z~t\char44{}l\char41{}\char41{}\\
+\tt ~let~plug~\char40{}\char40{}Dr~True~~a~r\char41{}\char58{}z\char41{}~t~\char61{}~Node~\char40{}a\char44{}\char40{}r\char44{}plug~z~t\char41{}\char41{}
 \end{tabbing}
+
 
 %----------------- Fim do anexo com soluções dos alunos ------------------------%
 

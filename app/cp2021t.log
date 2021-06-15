@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.5.4)  15 JUN 2021 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.5.4)  15 JUN 2021 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2890,15 +2890,15 @@ Overfull \hbox (23.66365pt too wide) in paragraph at lines 2103--2104
 e [] e []: 
  []
 
-[18]
+[18] [19]
 No file cp2021t.ind.
 No file cp2021t.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2121.
-[19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2121.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2196.
+[20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2196.
  (./cp2021t.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2121.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2196.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2196.
 
 Package rerunfilecheck Info: File `cp2021t.out' has not changed.
 (rerunfilecheck)             Checksum: 7ABFEEFBC6EDEE4EAEC2BDEF142178CE;514.
@@ -2906,7 +2906,7 @@ Package rerunfilecheck Info: File `cp2021t.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2121.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2196.
  )
 (\end occurred inside a group at level 3)
 
@@ -2915,13 +2915,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2121.
 ### semi simple group (level 1) entered at line 1959 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8915 strings out of 494847
- 129973 string characters out of 6179081
+ 8916 strings out of 494847
+ 129980 string characters out of 6179081
  227475 words of memory out of 5000000
  11976 multiletter control sequences out of 15000+600000
  37278 words of font info for 104 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 42i,14n,42p,349b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,42p,654b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -2946,10 +2946,10 @@ etic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cp2021t.pdf (19 pages, 1422560 bytes).
+Output written on cp2021t.pdf (20 pages, 1428164 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
