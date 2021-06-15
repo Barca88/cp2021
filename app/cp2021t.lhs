@@ -1017,19 +1017,85 @@ sd = p2 . cataExpAr sd_gen
 
 ad :: Floating a => a -> ExpAr a -> a
 ad v = p2 . cataExpAr (ad_gen v)
+\end{code} 
+
+\textbf{outExpAr}\newline
+
+Sabendo que a função \textbf{inExpAr} e \textbf{outExpAr} são testemunhas de um isomorfismo,
+então pela definição de \textbf{inExpAR} define-se:
+
+\begin{eqnarray}
+\start
+outExpAr . inExpAr= id
+\just\equiv{Pela definição de inExpAr}
+outExpAr . (either (const X)  numops) =id
+\just\equiv{Aplicando fusão+}
+either (outExpAr . (const X)) (outExpAr . numops) = id
+\just\equiv{Aplicando Natural id, universal+}
+|lcbr(
+    outExpAr . const X = i1
+  )(
+    outExpAr . numops = i2
+  )|
+\just\equiv{Aplicando definiçãos de ops e definição de numops}
+|lcbr(
+    outExpAr . const X =i1
+  )(
+    outExpAr . (either N (either Bin (uncurry Un)))) = i2
+
+  )|
+
+\just\equiv{Aplicando Natural ID, Fusao+, Eq+ e Reflexão+}
+  \left\{
+    \begin{array}
+      |outExpAr . const X = i1|\\
+      |outExpAr . N = i2 . i1|\\
+      |outExpAr . (either Bin (uncurry Un)) = i2 . i2|\\
+      \end{array}
+  \right.
+
+\just\equiv{Aplicando de volta Natural ID, Fusão +, Eq+, Reflexão+ e ainda a igualdade extensional}
+  \left\{
+    \begin{array}
+    |outExpAr . const X = i1 ()|\\
+    |outExpAr . (N a) = i2 . i1 $ |\\
+    |outExpAr (Un op b) = i2 . i2 . i2 $ (op , b)|\\
+    |outExpAr (Bin op c d) = i2 . i2 . i1 $ (op ,(c , d))|\\
+    \end{array}
+  \right.
+\end{eqnarray}
+
+Assim, a função \textbf{outExpAr} pode ser definida como: 
+\begin{code}
+outExpAr X = i1 ()
+outExpAr (N a) = i2 .i1  $ a
+outExpAr (Un op b) = i2 (i2(i2 $ (op,b))) 
+outExpAr (Bin op c d) = i2 (i2 (i1 $ (op, (c,d))))
 \end{code}
-Definir:
+---
+\begin{code}
+recExpAr g = baseExpAr id id id g g id g
+\end{code}
+
 
 \begin{code}
-outExpAr = undefined
----
-recExpAr = undefined
----
-g_eval_exp = undefined
----
-clean = undefined
----
-gopt = undefined
+g_eval_exp a = either (const a) (either id (either (expArit) (expoNega)))
+expArit (Sum, (a,b)) = (+) a b
+expArit (Product, (a,b)) = (*) a b
+expoNega (Negate, a) = -a
+expoNega (E,a) = (expd a)
+\end{code}
+
+
+\begin{code}
+clean (Bin Product (N 0) _) = i2 . i1 $ 0
+clean (Bin Product _ (N 0)) = i2 . i1 $ 0
+clean (Un E (N 0)) = i2 . i1 $ 1
+clean x = outExpAr x
+
+
+
+gopt a = g_eval_exp a
 \end{code}
 
 \begin{code}
