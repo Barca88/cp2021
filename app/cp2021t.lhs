@@ -7,6 +7,7 @@
 \usepackage{subcaption}
 \usepackage{adjustbox}
 \usepackage{color}
+\usepackage[all]{xy}
 \definecolor{red}{RGB}{255,  0,  0}
 \definecolor{blue}{RGB}{0,0,255}
 \def\red{\color{red}}
@@ -1063,6 +1064,7 @@ either (outExpAr . (const X)) (outExpAr . numops) = id
     |outExpAr (Bin op c d) = i2 . i2 . i1 $ (op ,(c , d))|\\
     \end{array}
   \right.
+  \qed
 \end{eqnarray}
 
 Assim, a função \textbf{outExpAr} pode ser definida como: 
@@ -1072,18 +1074,51 @@ outExpAr (N a) = i2 .i1  $ a
 outExpAr (Un op b) = i2 (i2(i2 $ (op,b))) 
 outExpAr (Bin op c d) = i2 (i2 (i1 $ (op, (c,d))))
 \end{code}
----
+
+\textbf{recExpAr}\newline
+Sabendo que a função {baseExpAr} é definida por:
 \begin{code}
-recExpAr g = baseExpAr id id id g g id g
+baseExpAr f g h j k l z = f -|- (g -|- (h >< (j >< k) -|- l >< z))
+\end{code}
+\newline
+
+e que {outExpAr} é:
+\begin{code}
+type OutExpAr a = Either () (Either a (Either (BinOp, (ExpAr a, ExpAr a)) (UnOp, ExpAr a)))
+\end{code}
+
+Podemos inferir este o seguinte diagram:
+
+
+Desta maneira:
+\newline
+\begin{eqnarray}
+\start
+recExpAr\ h = {|id + (id + (id >< (h >< h) + id >< h)))|}
+\just\equiv{ Usando a definição de baseExpAr}
+recExpAr h = baseExpAr id id id h h id h
+\end{eqnarray}
+\newline
+Assim \textbf{recExpAr} fica definida como
+\begin{code}
+recExpAr h = baseExpAr id id id h h id h
 \end{code}
 
 
+\textbf{-g_eval-exp}
+Tendo já encontrado o diagrama que permite ver como as trabsformações podem afetar \textbf{ExpAr},
+neste caso ira se ver a relação com \textbf{eval_exp}.
+
+
+Graças a este diagram, conseguimos determinar o gene de \textbf{eval-exp}.
+Assim, \textbf{g_val_exp} fica definido como:
+
 \begin{code}
-g_eval_exp a = either (const a) (either id (either (expArit) (expoNega)))
-expArit (Sum, (a,b)) = (+) a b
-expArit (Product, (a,b)) = (*) a b
-expoNega (Negate, a) = -a
-expoNega (E,a) = (expd a)
+g_eval_exp a = either (const a) (either id (either (expArit) (uNitar)))
+expArit (Sum, (m,o)) = (+) m o
+expArit (Product, (m,o)) = (*) m o
+uNitar(Negate, a) = -a
+eNitar (E,n) = (expd n)
 \end{code}
 
 
@@ -1092,16 +1127,16 @@ clean (Bin Product (N 0) _) = i2 . i1 $ 0
 clean (Bin Product _ (N 0)) = i2 . i1 $ 0
 clean (Un E (N 0)) = i2 . i1 $ 1
 clean x = outExpAr x
+\end{code}
 
-
-
+\begin{code}
 gopt a = g_eval_exp a
 \end{code}
 
 \begin{code}
-sd_gen :: Floating a =>
-    Either () (Either a (Either (BinOp, ((ExpAr a, ExpAr a), (ExpAr a, ExpAr a))) (UnOp, (ExpAr a, ExpAr a)))) -> (ExpAr a, ExpAr a)
-sd_gen = undefined
+sd_gen :: Floating f =>
+    Either () (Either f (Either (BinOp, ((ExpAr f, ExpAr f), (ExpAr f, ExpAr f))) (UnOp, (ExpAr f, ExpAr f)))) -> (ExpAr f, ExpAr f)
+sd_gen = undefined --either f1 (either )    
 \end{code}
 
 \begin{code}
