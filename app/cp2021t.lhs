@@ -1078,16 +1078,20 @@ outExpAr (Bin op c d) = i2 (i2 (i1 $ (op, (c,d))))
 \textbf{recExpAr}\newline
 Sabendo que a função {baseExpAr} é definida por:
 \begin{code}
-baseExpAr f g h j k l z = f -|- (g -|- (h >< (j >< k) -|- l >< z))
+baseExpAr1 f g h j k l z = f -|- (g -|- (h >< (j >< k) -|- l >< z))
 \end{code}
 \newline
 
-e que {outExpAr} é:
+e que \textbf{outExpAr} é ja se conhece
 \begin{code}
-type OutExpAr a = Either () (Either a (Either (BinOp, (ExpAr a, ExpAr a)) (UnOp, ExpAr a)))
+type OutExpAr1 a = Either () (Either a (Either (BinOp, (ExpAr a, ExpAr a)) (UnOp, ExpAr a)))
 \end{code}
 
 Podemos inferir este o seguinte diagram:
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{cp2021t_media/first.jpg}
+\end{figure}
 
 
 Desta maneira:
@@ -1103,14 +1107,17 @@ Assim \textbf{recExpAr} fica definida como
 \begin{code}
 recExpAr h = baseExpAr id id id h h id h
 \end{code}
-\newline
+\newpage
 
 \textbf{-g\_eval\_exp}
 \newline
 Tendo já encontrado o diagrama que permite ver como as trabsformações podem afetar \textbf{ExpAr},neste caso ira se ver a relação com \textbf{eval\_exp}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{cp2021t_media/second.jpg}
+\end{figure}
 
-
-Graças a este diagram, conseguimos determinar o gene de \textbf{eval\_exp}. Assim, \textbf{g\_val\_exp} fica definido como:
+Graças a este diagrama, conseguimos determinar o gene de \textbf{eval\_exp}. Assim, \textbf{g\_val\_exp} fica definido como:
 
 \begin{code}
 g_eval_exp a = either (const a) (either id (either (expArit) (uNitar)))
@@ -1136,9 +1143,7 @@ gopt a = g_eval_exp a
 \end{code}
 
 \begin{code}
-sd_gen :: Floating f =>
-    Either () (Either f (Either (BinOp, ((ExpAr f, ExpAr f), (ExpAr f, ExpAr f))) (UnOp, (ExpAr f, ExpAr f)))) -> (ExpAr f, ExpAr f)
-sd_gen = undefined --either f1 (either )    
+sd_gen = undefined 
 \end{code}
 
 \begin{code}
@@ -1234,200 +1239,220 @@ cat n = prj . for loop init $ n where
 \begin{code}
 calcLine :: NPoint -> (NPoint -> OverTime NPoint)
 calcLine = cataList h where
-   h = undefined
+   h = either gCL1 gCL2
+gCL1 () = const nil
+gCL2 (p,x) = ((curry g) p x) where
+       g (d,f) l = case l of
+        [] -> nil
+        (x:xs) -> \z -> concat $ (sequenceA [singl . linear1d d x, f xs]) z
+
+
+gCastel1 [] = i1 nil
+gCastel1 [p] = i1 (const p)
+gCastel1 l = i2 (init l,tail l)
+gCastel2a l = l
+gCastel2b (x,y) = \pt -> (calcLine (x pt) (y pt)) pt
+
+gCastel2 = either gCastel2a gCastel2b
 
 deCasteljau :: [NPoint] -> OverTime NPoint
 deCasteljau = hyloAlgForm alg coalg where
-   coalg = undefined
-   alg = undefined
-
-hyloAlgForm = undefined
+   coalg = cataLTree gCastel2
+   alg = anaLTree gCastel1
+hyloAlgForm a b =  b . a
 \end{code}
+
 
 \subsection*{Problema 4}
 
+\begin{eqnarray*}
+\start
+avg\_aux = \cata{[b, q]}
+%
+\just\equiv{\textcolor{blue}{Utilizando\ a\ definição\ de\ avg\_aux}}
+%
+\split{avg}{length} \ = \cata{[b, q]}
+%
+\just\equiv{\textcolor{blue}{Univelsal-cata}}
+%
+\split{avg}{length} \ = [\ b\ ,\ q\ ]\ .\ recList\ \cata{[b, q]}\ .\ outList\
+
+\end{eqnarray*}
+
 Solução para listas não vazias:
+
+Neste caso, uma vez que necessitamos de trabalhar com listas não-vazias, foi necessário definir um outLsingl e um cataLsingl.
+
+\begin{code}
+outLsingl [a] = i1 (a)
+outLsingl (a:x) = i2 (a,x)
+
+cataLsingl g = g . recList(cataLsingl g) . outLsingl
+\end{code}
+
+
+De seguida, assumimos que as funções |avg| e |length| são dos seguintes tipos:
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A^{+}
+                \ar[rr]^{|avg|} &
+&   A
+}}
+}
+
+\\
+
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A^{+}
+                \ar[rr]^{|length|} &
+&   N_0
+}}
+}
+Com estas duas definições podemos dizer que a média de uma lista constituida por elementos do tipo A será do tipo A e o tamanho dessa lista é um número natural.
+
+Com isto, através das definições das funções anteriores e aos tipos de |avg| e |length|, obtivemos o seguinte diagrama:
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A^{+}
+          \ar[d]_-{|<avg,length>|}
+                \ar[rr]^-{|outLsingl|} &
+&   A + (A \times A^{+})
+        \ar[d]^{|recList(cataLsingl ([b,q]))|}\\
+    A \times N_0 &  & A + A \times A \times N_0
+          \ar[ll]^-{[b,q]}
+}}
+}
+
+\\
+Casos específicos:
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A
+                \ar[rr]^{|b|} &
+&   A \times N_0
+}}
+}
+
+\\
+Caso em que a lista tem apenas 1 elemento - a média da lista é o próprio elemento. Logo:
+
+\begin{code}
+b = (split (id) (const 1))
+\end{code}
+
+\\
+Caso em que temos o produto de um elemento da lista com o produto da média e do comprimento calculado na execução recursiva sobre a lista.
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A \times (A \times N_0)
+                \ar[rr]^{|q|} &
+&   A \times N_0
+}}
+}
+
+\\
+Voltamos a calcular a média e incrementamos em 1 o comprimento.
+
+\begin{code}
+q = (split (auxFunc) (succ . p2 . p2)) where
+                             auxFunc(a, (avg, len)) = ((a + (avg * len)) / (len + 1))
+\end{code}
+
+\\
+Juntando então as definições das ultimas duas funções conseguimos calcular um produto com a média e o comprimento da lista.\\
+Como queremos a média de uma lista não vazia, vamos calcular este produto e aplicar de seguida a função |p1|.
+\\
+
+Solução:
 \begin{code}
 avg = p1.avg_aux
+
+avg_aux = cataLsingl (either (split (id) (const 1)) (split (auxFunc) (succ . p2 . p2))) where
+                                                           auxFunc(a, (avg, len)) = ((a + (avg * len)) / (len + 1))
 \end{code}
-Conforme apresentado no enunciado do problema, a média de uma lista não vazia pode ser calculada a partir da seguinte expressão:
 
-\begin{quote}
-  	$avg (a:x) = \frac 1 {k+1}(a+\sum_{i=1}^{k} x_i) = \frac{a+k(avg\ x)}{k+1}$ para $k=length\ x$
-\end{quote}
+Para árvores de tipo \LTree:
 
-Logo $avg$ está em recursividade mútua com $length$. A partir desta afirmação, começa-se por apresentar a definição de avg e length:
-\begin{quote}
-  $avg [x] = x$ \\
-  $avg (h : t) = (h + k * (avg t)) / (k+1) where k = length t$ \\
-  $length [x] = 1$ \\
-  $length (h:t) = succ . length t$
-\end{quote}
+Mantendo os tipos das funções anteriores (|avg|,|len|) e utilizando as funções já definidas (|outLTree|,|recLTree|,|cataLTree|) obtivemos o diagrama seguinte:\\
 
-Caso se represente esta formulação sob a forma de diagrama, facilmente se conclui que não se trata de um catamorfimo. No entanto, apresentaremos length para listas não vazias:
-
-\begin{eqnarray*}
-  \xymatrix {
-  | A^{+} |
-     \ar[r]^{outLT}
-     \ar[d]_{\llparenthesis length \rrparenthesis}
-&
-  | A + A \times A^{+} |
-    \ar[d]^{id + id \times length}
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    LTree A
+          \ar[d]_-{|<avg,length>|}
+                \ar[rr]^-{|outLTree|} &
+&   A + (LTree A \times LTree A)
+        \ar[d]^{|recLTree(cataLTree ([b,q]))|}\\
+    A \times N_0 &  & A + ((A \times N_0) \times (A \times N_0))
+          \ar[ll]^-{[b,q]}
+}}
+}
 \\
-  |Nat0|
-&
-  |A + A \times Nat0|
-    \ar[l]_{[const 1, succ \cdot \pi1]}
-  }
-\end{eqnarray*}
-
-A partir deste ponto, podemos modificar a função length para que também calcule a média da lista. 
-No final, pode-se simplesmente ignorar tal cálculo através do cancelamento-x.
-
-\begin{eqnarray*}
-  \xymatrix {
-  | A^{+} |
-     \ar[r]^{outLT}
-     \ar[d]_{\llparenthesis length \rrparenthesis}
-&
-  | A + A \times A^{+} |
-    \ar[d]_{id + id \times <avg, length>}
+Assim, temos os tipos das funções |b| e |q|.
 \\
-  |Nat0|
-&
-  |A + A \times (R, Nat0)|
-    \ar[l]_{[1, succ \cdot \pi2]}
-  }
-\end{eqnarray*}
 
-Pode-se, agora derivar também o cálculo avg:
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A
+                \ar[rr]^{|b|} &
+&   A \times N_0
+}}
+}
 
-\begin{eqnarray*}
-  \xymatrix {
-  | A^{+} |
-     \ar[r]^{outLT}
-     \ar[d]_{\llparenthesis avg \rrparenthesis}
-&
-  | A + A \times A^{+} |
-    \ar[d]_{id + id \times <avg, length>}
 \\
-  |R|
-&
-  | A + A \times (R, Nat0) |
-    \ar[l]_{[id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]}
-  }
-\end{eqnarray*}
 
-Utilizando a lei da recursividade mútua, pode-se desenvolver que:
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A + ((A \times N_0) \times (A \times N_0))
+                \ar[rr]^{|q|} &
+&   A \times N_0
+}}
+}
 
-\begin{eqnarray*}
-  $ <avg, length> = \llparenthesis \langle  h,k \rangle  \rrparenthesis $ \\
-  $ \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k := [1, succ . \pi_{2}] \} $ \\
-  $ <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)],[1, succ . \pi_{2}] \rangle  \rrparenthesis $ \\
-  $ \equiv \{ Lei da troca (28) \} $ \\
-  $ <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \langle  (\pi_{2} * \pi_{1}) / (\pi_{2} + 1), succ . \pi_{2} \rangle ] \rrparenthesis $ \\
-\end{eqnarray*}
+\\
 
+Para |b|, utilizamos a definição utilizada para a definição da função |avg| para listas não vazias:
+\\
 \begin{code}
-avg_aux [x] = (x,1)
-avg_aux (h:t) = ((h + (a * b)) / (succ b), succ b)
-              where (a,b) = avg_aux t
+bLTree = (split (id) (const 1))
 \end{code}
-Solução para árvores de tipo \LTree:
-
-Solução para árvores de tipo \LTree:
-
-Comecemos por apresentar o diagrama do catamorfismo.
-
-\begin{eqnarray*}
-  \xymatrix {
-  |LTree A|
-     \ar[r]_{outLT}
-     \ar[d]^{\llparenthises avg, length \rrparenthesis}
-&
-  |A + (LTree A)^{2}|
-    \ar[d]_{id + <avg, length>^{2}}
 \\
-  |A \times B|
-&
-  |A + (X, Nat0) \times (X, Nat0)|
-  }
-\end{eqnarray*}
 
-\begin{eqnarray*}
-  $ \langle avg, length \rangle = \llparenthesis \langle h, k \rangle \rrparenthesis $ \\
-  $ \equiv \left\{ Fokkinga (52) \right\} $\\
-  \left\{\begin{array}{lr}
-    $ avg \cdot inLT = h \cdot (id + \left\langle avg, length \right\rangle ^{2}  ) $\\
-    $ length \cdot inLT = k \cdot (id + \left\langle avg, length \right\rangle ^{2}  ) $\\
-  \end{array}\right
-  $\equiv \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg \cdot inLT = h1$ \\
-      $avg \cdot inLT = h2 \cdot \left\langle avg, length \right\rangle ^{2}$\\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length \cdot inLT = k1$ \\
-      $length \cdot inLT = k2 \cdot \left\langle avg, length \right\rangle ^{2}$\\
-    \end{array}\right
-  \end{array}\right
-  $\equiv \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72); Def-x (77); Def-split (76) \right\} $\\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg (Leaf a) = h1 a$ \\
-      $avg (Fork (l,r)) = h2 ((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length (Leaf a) = k1 1$\\
-      $length (Fork (l,r)) = k2 ((avg l, length l), (avg r), length r)$\\
-    \end{array}\right
-  \end{array}\right
-  \equiv \left\{ Def-length para LTree: contar Leaf - k1 := const 1; k2 = uncurry (+) \cdot \left\langle \pi2, \pi2\right\rangle; def-const   \right\} \\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg (Leaf a) = h1 a$ \\
-      $avg (Fork (l,r)) = h2 ((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length (Leaf a) = 1$ \\
-      $length (Fork (l,r)) = uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-  \end{array}\right
-  \equiv \left\{ h1 := id; h2 := (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle; Def-id (73)  \right\} \\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg (Leaf a) = a$ \\
-      $avg (Fork (l,r)) =  (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle ((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length (Leaf a) = 1$ \\
-      $length (Fork (l,r)) = uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-  \end{array}\right
-  $\equiv \left\{ Eq - + (27)  \right\}$\\
-  \left\{\begin{array}{lr}
-    $ avg . inLT = [id, (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] \cdot (id + \left\langle avg, length \right\rangle ^{2})$ \\
-    $ length . inLT = [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \cdot (id + \left\langle avg, length \right\rangle ^{2})$ \\
-  \end{array}\right
-  $\equiv \left\{ Fokkinga (52)  \right\} $\\
-  $\langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] , [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \rangle \rrparenthesis$\\
-  $\equiv \left\{ Lei da Troca (28)  \right\} $\\
-  $\langle avg, length \rangle = \llparenthesis [\left\langle id, const 1 \right\rangle , \left\langle (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle \right\rangle  (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] , [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \rangle \rrparenthesis$\\
-\end{eqnarray*}
+Para |q| temos que voltar a calcular a média das duas sub-árvores.
+\\
+\begin{code}
+qLTree = (split (auxFuncLTree) (sumSizes)) where
+                      auxFuncLTree ((a1,n1),(a2,n2)) = (((a1*n1) + (a2*n2)) / (n1+n2))
+                      sumSizes ((a1,n1),(a2,n2)) = n1 + n2
+\end{code}
 
-Optou-se por utilizar a versão \textit{pointwise} para o calculo da média entre dois ramos, nomeadamente através da média ponderada:
-
-\begin{eqnarray*}
-  avg ((avgl, ll),(avgr, lr)) = ((avgl * ll) + (avgr * lr)) / (ll + lr)
-\end{eqnarray*}
+\\
+Com a função |avgLTree| vamos calcular o produto com a média e comprimento de uma árvore e utilizar a função p1 para retirar apenas a média.
+Juntando as duas funções no |either| que será o gene do catamorfismo das LTrees, chegamos à definição da solução da função |avgLTree|:
 
 \begin{code}
 avgLTree = p1.cataLTree gene where
-   g  ((avgl, ll),(avgr, lr)) = ((avgl * ll) + (avgr * lr)) / (ll + lr)
-   -- t = uncurry (+) . mulUnc >< mulUnc
-   gene = either (split id (const 1)) (split g ((uncurry (+)) . (p2 >< p2)))
+                        gene = (either (split (id) (const 1)) (split (auxFuncLTree) (sumSizes))) where
+                                                                      auxFuncLTree ((a1,n1),(a2,n2)) = (((a1*n1) + (a2*n2)) / (n1+n2))
+                                                                      sumSizes ((a1,n1),(a2,n2)) = n1 + n2
 \end{code}
 
 \subsection*{Problema 5}

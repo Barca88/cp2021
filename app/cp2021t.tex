@@ -1615,20 +1615,24 @@ Sabendo que a função {baseExpAr} é definida por:
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{baseExpAr}\;\Varid{f}\;\Varid{g}\;\Varid{h}\;\Varid{j}\;\Varid{k}\;\Varid{l}\;\Varid{z}\mathrel{=}\Varid{f}+(\Varid{g}+(\Varid{h}\times(\Varid{j}\times\Varid{k})+\Varid{l}\times\Varid{z})){}\<[E]%
+\>[B]{}\Varid{baseExpAr1}\;\Varid{f}\;\Varid{g}\;\Varid{h}\;\Varid{j}\;\Varid{k}\;\Varid{l}\;\Varid{z}\mathrel{=}\Varid{f}+(\Varid{g}+(\Varid{h}\times(\Varid{j}\times\Varid{k})+\Varid{l}\times\Varid{z})){}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 \newline
 
-e que {outExpAr} é:
+e que \textbf{outExpAr} é ja se conhece
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\mathbf{type}\;\Conid{OutExpAr}\;\Varid{a}\mathrel{=}()+(\Varid{a}+((\Conid{BinOp},(\Conid{ExpAr}\;\Varid{a},\Conid{ExpAr}\;\Varid{a}))+(\Conid{UnOp},\Conid{ExpAr}\;\Varid{a}))){}\<[E]%
+\>[B]{}\mathbf{type}\;\Conid{OutExpAr1}\;\Varid{a}\mathrel{=}()+(\Varid{a}+((\Conid{BinOp},(\Conid{ExpAr}\;\Varid{a},\Conid{ExpAr}\;\Varid{a}))+(\Conid{UnOp},\Conid{ExpAr}\;\Varid{a}))){}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 
 Podemos inferir este o seguinte diagram:
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{cp2021t_media/first.jpg}
+\end{figure}
 
 
 Desta maneira:
@@ -1647,14 +1651,17 @@ Assim \textbf{recExpAr} fica definida como
 \>[B]{}\Varid{recExpAr}\;\Varid{h}\mathrel{=}\Varid{baseExpAr}\;\Varid{id}\;\Varid{id}\;\Varid{id}\;\Varid{h}\;\Varid{h}\;\Varid{id}\;\Varid{h}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
-\newline
+\newpage
 
 \textbf{-g\_eval\_exp}
 \newline
 Tendo já encontrado o diagrama que permite ver como as trabsformações podem afetar \textbf{ExpAr},neste caso ira se ver a relação com \textbf{eval\_exp}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{cp2021t_media/second.jpg}
+\end{figure}
 
-
-Graças a este diagram, conseguimos determinar o gene de \textbf{eval\_exp}. Assim, \textbf{g\_val\_exp} fica definido como:
+Graças a este diagrama, conseguimos determinar o gene de \textbf{eval\_exp}. Assim, \textbf{g\_val\_exp} fica definido como:
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
@@ -1697,14 +1704,8 @@ Graças a este diagram, conseguimos determinar o gene de \textbf{eval\_exp}. Ass
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{5}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{sd\char95 gen}\mathbin{::}\Conid{Floating}\;\Varid{f}\Rightarrow {}\<[E]%
-\\
-\>[B]{}\hsindent{5}{}\<[5]%
-\>[5]{}()+(\Varid{f}+((\Conid{BinOp},((\Conid{ExpAr}\;\Varid{f},\Conid{ExpAr}\;\Varid{f}),(\Conid{ExpAr}\;\Varid{f},\Conid{ExpAr}\;\Varid{f})))+(\Conid{UnOp},(\Conid{ExpAr}\;\Varid{f},\Conid{ExpAr}\;\Varid{f}))))\to (\Conid{ExpAr}\;\Varid{f},\Conid{ExpAr}\;\Varid{f}){}\<[E]%
-\\
-\>[B]{}\Varid{sd\char95 gen}\mathrel{=}\bot \mbox{\onelinecomment either f1 (either )    }{}\<[E]%
+\>[B]{}\Varid{sd\char95 gen}\mathrel{=}\bot {}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 
@@ -1813,233 +1814,288 @@ O que Resultou no seguinte código:
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{4}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{8}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{9}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{20}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
 \>[B]{}\Varid{calcLine}\mathbin{::}\Conid{NPoint}\to (\Conid{NPoint}\to \Conid{OverTime}\;\Conid{NPoint}){}\<[E]%
 \\
 \>[B]{}\Varid{calcLine}\mathrel{=}\Varid{cataList}\;\Varid{h}\;\mathbf{where}{}\<[E]%
 \\
 \>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{h}\mathrel{=}\bot {}\<[E]%
+\>[4]{}\Varid{h}\mathrel{=}\alt{\Varid{gCL1}}{\Varid{gCL2}}{}\<[E]%
+\\
+\>[B]{}\Varid{gCL1}\;()\mathrel{=}\underline{\Varid{nil}}{}\<[E]%
+\\
+\>[B]{}\Varid{gCL2}\;(\Varid{p},\Varid{x})\mathrel{=}(\overline{\Varid{g}}\;\Varid{p}\;\Varid{x})\;\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{8}{}\<[8]%
+\>[8]{}\Varid{g}\;(\Varid{d},\Varid{f})\;\Varid{l}\mathrel{=}\mathbf{case}\;\Varid{l}\;\mathbf{of}{}\<[E]%
+\\
+\>[8]{}\hsindent{1}{}\<[9]%
+\>[9]{}[\mskip1.5mu \mskip1.5mu]\to \Varid{nil}{}\<[E]%
+\\
+\>[8]{}\hsindent{1}{}\<[9]%
+\>[9]{}(\Varid{x}\mathbin{:}\Varid{xs})\to \lambda \Varid{z}\to \Varid{concat}\mathbin{\$}(\Varid{sequenceA}\;[\mskip1.5mu \Varid{singl}\comp \Varid{linear1d}\;\Varid{d}\;\Varid{x},\Varid{f}\;\Varid{xs}\mskip1.5mu])\;\Varid{z}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{gCastel1}\;[\mskip1.5mu \mskip1.5mu]\mathrel{=}i_1\;\Varid{nil}{}\<[E]%
+\\
+\>[B]{}\Varid{gCastel1}\;[\mskip1.5mu \Varid{p}\mskip1.5mu]\mathrel{=}i_1\;\underline{\Varid{p}}{}\<[E]%
+\\
+\>[B]{}\Varid{gCastel1}\;\Varid{l}\mathrel{=}i_2\;(\Varid{init}\;\Varid{l},\Varid{tail}\;\Varid{l}){}\<[E]%
+\\
+\>[B]{}\Varid{gCastel2a}\;\Varid{l}\mathrel{=}\Varid{l}{}\<[E]%
+\\
+\>[B]{}\Varid{gCastel2b}\;(\Varid{x},\Varid{y})\mathrel{=}\lambda \Varid{pt}\to (\Varid{calcLine}\;(\Varid{x}\;\Varid{pt})\;(\Varid{y}\;\Varid{pt}))\;\Varid{pt}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{gCastel2}\mathrel{=}\alt{\Varid{gCastel2a}}{\Varid{gCastel2b}}{}\<[E]%
 \\[\blanklineskip]%
 \>[B]{}\Varid{deCasteljau}\mathbin{::}[\mskip1.5mu \Conid{NPoint}\mskip1.5mu]\to \Conid{OverTime}\;\Conid{NPoint}{}\<[E]%
 \\
 \>[B]{}\Varid{deCasteljau}\mathrel{=}\Varid{hyloAlgForm}\;\Varid{alg}\;\Varid{coalg}\;\mathbf{where}{}\<[E]%
 \\
 \>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{coalg}\mathrel{=}\bot {}\<[E]%
+\>[4]{}\Varid{coalg}\mathrel{=}\llparenthesis\, \Varid{gCastel2}\,\rrparenthesis{}\<[E]%
 \\
 \>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{alg}\mathrel{=}\bot {}\<[E]%
-\\[\blanklineskip]%
-\>[B]{}\Varid{hyloAlgForm}\mathrel{=}\bot {}\<[E]%
+\>[4]{}\Varid{alg}\mathrel{=}\mathopen{[\!(}\Varid{gCastel1}\mathclose{)\!]}{}\<[E]%
+\\
+\>[B]{}\Varid{hyloAlgForm}\;\Varid{a}\;\Varid{b}\mathrel{=}{}\<[20]%
+\>[20]{}\Varid{b}\comp \Varid{a}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
+
 
 \subsection*{Problema 4}
 
+\begin{eqnarray*}
+\start
+avg\_aux = \cata{[b, q]}
+%
+\just\equiv{\textcolor{blue}{Utilizando\ a\ definição\ de\ avg\_aux}}
+%
+\split{avg}{length} \ = \cata{[b, q]}
+%
+\just\equiv{\textcolor{blue}{Univelsal-cata}}
+%
+\split{avg}{length} \ = [\ b\ ,\ q\ ]\ .\ recList\ \cata{[b, q]}\ .\ outList\
+
+\end{eqnarray*}
+
 Solução para listas não vazias:
+
+Neste caso, uma vez que necessitamos de trabalhar com listas não-vazias, foi necessário definir um outLsingl e um cataLsingl.
+
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{E}{@{}>{\hspre}l<{\hspost}@{}}%
+\>[B]{}\Varid{outLsingl}\;[\mskip1.5mu \Varid{a}\mskip1.5mu]\mathrel{=}i_1\;(\Varid{a}){}\<[E]%
+\\
+\>[B]{}\Varid{outLsingl}\;(\Varid{a}\mathbin{:}\Varid{x})\mathrel{=}i_2\;(\Varid{a},\Varid{x}){}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{cataLsingl}\;\Varid{g}\mathrel{=}\Varid{g}\comp \Varid{recList}\;(\Varid{cataLsingl}\;\Varid{g})\comp \Varid{outLsingl}{}\<[E]%
+\ColumnHook
+\end{hscode}\resethooks
+
+
+De seguida, assumimos que as funções \ensuremath{\Varid{avg}} e \ensuremath{\length } são dos seguintes tipos:
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A^{+}
+                \ar[rr]^{\ensuremath{\Varid{avg}}} &
+&   A
+}}
+}
+
+\\
+
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A^{+}
+                \ar[rr]^{\ensuremath{\length }} &
+&   N_0
+}}
+}
+Com estas duas definições podemos dizer que a média de uma lista constituida por elementos do tipo A será do tipo A e o tamanho dessa lista é um número natural.
+
+Com isto, através das definições das funções anteriores e aos tipos de \ensuremath{\Varid{avg}} e \ensuremath{\length }, obtivemos o seguinte diagrama:
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A^{+}
+          \ar[d]_-{\ensuremath{\mathbin{<}\Varid{avg},\length \mathbin{>}}}
+                \ar[rr]^-{\ensuremath{\Varid{outLsingl}}} &
+&   A + (A \times A^{+})
+        \ar[d]^{\ensuremath{\Varid{recList}\;(\Varid{cataLsingl}\;([\mskip1.5mu \Varid{b},\Varid{q}\mskip1.5mu]))}}\\
+    A \times N_0 &  & A + A \times A \times N_0
+          \ar[ll]^-{[b,q]}
+}}
+}
+
+\\
+Casos específicos:
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A
+                \ar[rr]^{\ensuremath{\Varid{b}}} &
+&   A \times N_0
+}}
+}
+
+\\
+Caso em que a lista tem apenas 1 elemento - a média da lista é o próprio elemento. Logo:
+
+\begin{hscode}\SaveRestoreHook
+\column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{E}{@{}>{\hspre}l<{\hspost}@{}}%
+\>[B]{}\Varid{b}\mathrel{=}\conj{\Varid{id}}{\underline{\mathrm{1}}}{}\<[E]%
+\ColumnHook
+\end{hscode}\resethooks
+
+\\
+Caso em que temos o produto de um elemento da lista com o produto da média e do comprimento calculado na execução recursiva sobre a lista.
+\\
+
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A \times (A \times N_0)
+                \ar[rr]^{\ensuremath{\Varid{q}}} &
+&   A \times N_0
+}}
+}
+
+\\
+Voltamos a calcular a média e incrementamos em 1 o comprimento.
+
+\begin{hscode}\SaveRestoreHook
+\column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{30}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{E}{@{}>{\hspre}l<{\hspost}@{}}%
+\>[B]{}\Varid{q}\mathrel{=}\conj{\Varid{auxFunc}}{\succ \comp \p2\comp \p2}\;\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{30}{}\<[30]%
+\>[30]{}\Varid{auxFunc}\;(\Varid{a},(\Varid{avg},\Varid{len}))\mathrel{=}((\Varid{a}\mathbin{+}(\Varid{avg}\mathbin{*}\Varid{len}))\mathbin{/}(\Varid{len}\mathbin{+}\mathrm{1})){}\<[E]%
+\ColumnHook
+\end{hscode}\resethooks
+
+\\
+Juntando então as definições das ultimas duas funções conseguimos calcular um produto com a média e o comprimento da lista.\\
+Como queremos a média de uma lista não vazia, vamos calcular este produto e aplicar de seguida a função \ensuremath{\p1}.
+\\
+
+Solução:
+\begin{hscode}\SaveRestoreHook
+\column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{60}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
 \>[B]{}\Varid{avg}\mathrel{=}\p1\comp \Varid{avg\char95 aux}{}\<[E]%
+\\[\blanklineskip]%
+\>[B]{}\Varid{avg\char95 aux}\mathrel{=}\Varid{cataLsingl}\;\alt{\conj{\Varid{id}}{\underline{\mathrm{1}}}}{\conj{\Varid{auxFunc}}{\succ \comp \p2\comp \p2}}\;\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{60}{}\<[60]%
+\>[60]{}\Varid{auxFunc}\;(\Varid{a},(\Varid{avg},\Varid{len}))\mathrel{=}((\Varid{a}\mathbin{+}(\Varid{avg}\mathbin{*}\Varid{len}))\mathbin{/}(\Varid{len}\mathbin{+}\mathrm{1})){}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
-Conforme apresentado no enunciado do problema, a média de uma lista não vazia pode ser calculada a partir da seguinte expressão:
 
-\begin{quote}
-  	$avg (a:x) = \frac 1 {k+1}(a+\sum_{i=1}^{k} x_i) = \frac{a+k(avg\ x)}{k+1}$ para $k=length\ x$
-\end{quote}
+Para árvores de tipo \LTree:
 
-Logo $avg$ está em recursividade mútua com $length$. A partir desta afirmação, começa-se por apresentar a definição de avg e length:
-\begin{quote}
-  $avg [x] = x$ \\
-  $avg (h : t) = (h + k * (avg t)) / (k+1) where k = length t$ \\
-  $length [x] = 1$ \\
-  $length (h:t) = succ . length t$
-\end{quote}
+Mantendo os tipos das funções anteriores (\ensuremath{\Varid{avg}},\ensuremath{\Varid{len}}) e utilizando as funções já definidas (\ensuremath{\Varid{outLTree}},\ensuremath{\Varid{recLTree}},\ensuremath{\llparenthesis\, \cdot \,\rrparenthesis}) obtivemos o diagrama seguinte:\\
 
-Caso se represente esta formulação sob a forma de diagrama, facilmente se conclui que não se trata de um catamorfimo. No entanto, apresentaremos length para listas não vazias:
-
-\begin{eqnarray*}
-  \xymatrix {
-  \ensuremath{\Conid{A}\mathbin{\uparrow}\{\mskip1.5mu \mathbin{+}\mskip1.5mu\}}
-     \ar[r]^{outLT}
-     \ar[d]_{\llparenthesis length \rrparenthesis}
-&
-  \ensuremath{\Conid{A}\mathbin{+}\Conid{A}\lambda \Varid{times}\;\Conid{A}\mathbin{\uparrow}\{\mskip1.5mu \mathbin{+}\mskip1.5mu\}}
-    \ar[d]^{id + id \times length}
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    LTree A
+          \ar[d]_-{\ensuremath{\mathbin{<}\Varid{avg},\length \mathbin{>}}}
+                \ar[rr]^-{\ensuremath{\Varid{outLTree}}} &
+&   A + (LTree A \times LTree A)
+        \ar[d]^{\ensuremath{\Varid{recLTree}\;\llparenthesis\, [\mskip1.5mu \Varid{b},\Varid{q}\mskip1.5mu]\,\rrparenthesis}}\\
+    A \times N_0 &  & A + ((A \times N_0) \times (A \times N_0))
+          \ar[ll]^-{[b,q]}
+}}
+}
 \\
-  \ensuremath{\N_0}
-&
-  \ensuremath{\Conid{A}\mathbin{+}\Conid{A}\lambda \Varid{times}\;\N_0}
-    \ar[l]_{[const 1, succ \cdot \pi1]}
-  }
-\end{eqnarray*}
-
-A partir deste ponto, podemos modificar a função length para que também calcule a média da lista. 
-No final, pode-se simplesmente ignorar tal cálculo através do cancelamento-x.
-
-\begin{eqnarray*}
-  \xymatrix {
-  \ensuremath{\Conid{A}\mathbin{\uparrow}\{\mskip1.5mu \mathbin{+}\mskip1.5mu\}}
-     \ar[r]^{outLT}
-     \ar[d]_{\llparenthesis length \rrparenthesis}
-&
-  \ensuremath{\Conid{A}\mathbin{+}\Conid{A}\lambda \Varid{times}\;\Conid{A}\mathbin{\uparrow}\{\mskip1.5mu \mathbin{+}\mskip1.5mu\}}
-    \ar[d]_{id + id \times <avg, length>}
+Assim, temos os tipos das funções \ensuremath{\Varid{b}} e \ensuremath{\Varid{q}}.
 \\
-  \ensuremath{\N_0}
-&
-  \ensuremath{\Conid{A}\mathbin{+}\Conid{A}\lambda \Varid{times}\;(\Conid{R},\N_0)}
-    \ar[l]_{[1, succ \cdot \pi2]}
-  }
-\end{eqnarray*}
 
-Pode-se, agora derivar também o cálculo avg:
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A
+                \ar[rr]^{\ensuremath{\Varid{b}}} &
+&   A \times N_0
+}}
+}
 
-\begin{eqnarray*}
-  \xymatrix {
-  \ensuremath{\Conid{A}\mathbin{\uparrow}\{\mskip1.5mu \mathbin{+}\mskip1.5mu\}}
-     \ar[r]^{outLT}
-     \ar[d]_{\llparenthesis avg \rrparenthesis}
-&
-  \ensuremath{\Conid{A}\mathbin{+}\Conid{A}\lambda \Varid{times}\;\Conid{A}\mathbin{\uparrow}\{\mskip1.5mu \mathbin{+}\mskip1.5mu\}}
-    \ar[d]_{id + id \times <avg, length>}
 \\
-  \ensuremath{\Conid{R}}
-&
-  \ensuremath{\Conid{A}\mathbin{+}\Conid{A}\lambda \Varid{times}\;(\Conid{R},\N_0)}
-    \ar[l]_{[id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]}
-  }
-\end{eqnarray*}
 
-Utilizando a lei da recursividade mútua, pode-se desenvolver que:
+\centerline{
+\xymatrixcolsep{2pc}\xymatrixrowsep{3pc}
+{\xymatrix{
+    A + ((A \times N_0) \times (A \times N_0))
+                \ar[rr]^{\ensuremath{\Varid{q}}} &
+&   A \times N_0
+}}
+}
 
-\begin{eqnarray*}
-  $ <avg, length> = \llparenthesis \langle  h,k \rangle  \rrparenthesis $ \\
-  $ \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k := [1, succ . \pi_{2}] \} $ \\
-  $ <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)],[1, succ . \pi_{2}] \rangle  \rrparenthesis $ \\
-  $ \equiv \{ Lei da troca (28) \} $ \\
-  $ <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \langle  (\pi_{2} * \pi_{1}) / (\pi_{2} + 1), succ . \pi_{2} \rangle ] \rrparenthesis $ \\
-\end{eqnarray*}
+\\
 
+Para \ensuremath{\Varid{b}}, utilizamos a definição utilizada para a definição da função \ensuremath{\Varid{avg}} para listas não vazias:
+\\
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{15}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{avg\char95 aux}\;[\mskip1.5mu \Varid{x}\mskip1.5mu]\mathrel{=}(\Varid{x},\mathrm{1}){}\<[E]%
-\\
-\>[B]{}\Varid{avg\char95 aux}\;(\Varid{h}\mathbin{:}\Varid{t})\mathrel{=}((\Varid{h}\mathbin{+}(\Varid{a}\mathbin{*}\Varid{b}))\mathbin{/}(\succ \;\Varid{b}),\succ \;\Varid{b}){}\<[E]%
-\\
-\>[B]{}\hsindent{15}{}\<[15]%
-\>[15]{}\mathbf{where}\;(\Varid{a},\Varid{b})\mathrel{=}\Varid{avg\char95 aux}\;\Varid{t}{}\<[E]%
+\>[B]{}\Varid{bLTree}\mathrel{=}\conj{\Varid{id}}{\underline{\mathrm{1}}}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
-Solução para árvores de tipo \LTree:
-
-Solução para árvores de tipo \LTree:
-
-Comecemos por apresentar o diagrama do catamorfismo.
-
-\begin{eqnarray*}
-  \xymatrix {
-  \ensuremath{\mathsf{LTree}\;\Conid{A}}
-     \ar[r]_{outLT}
-     \ar[d]^{\llparenthises avg, length \rrparenthesis}
-&
-  \ensuremath{\Conid{A}\mathbin{+}(\mathsf{LTree}\;\Conid{A})\mathbin{\uparrow}\{\mskip1.5mu \mathrm{2}\mskip1.5mu\}}
-    \ar[d]_{id + <avg, length>^{2}}
 \\
-  \ensuremath{\Conid{A}\lambda \Varid{times}\;\Conid{B}}
-&
-  \ensuremath{\Conid{A}\mathbin{+}(\Conid{X},\N_0)\lambda \Varid{times}\;(\Conid{X},\N_0)}
-  }
-\end{eqnarray*}
 
-\begin{eqnarray*}
-  $ \langle avg, length \rangle = \llparenthesis \langle h, k \rangle \rrparenthesis $ \\
-  $ \equiv \left\{ Fokkinga (52) \right\} $\\
-  \left\{\begin{array}{lr}
-    $ avg \cdot inLT = h \cdot (id + \left\langle avg, length \right\rangle ^{2}  ) $\\
-    $ length \cdot inLT = k \cdot (id + \left\langle avg, length \right\rangle ^{2}  ) $\\
-  \end{array}\right
-  $\equiv \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg \cdot inLT = h1$ \\
-      $avg \cdot inLT = h2 \cdot \left\langle avg, length \right\rangle ^{2}$\\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length \cdot inLT = k1$ \\
-      $length \cdot inLT = k2 \cdot \left\langle avg, length \right\rangle ^{2}$\\
-    \end{array}\right
-  \end{array}\right
-  $\equiv \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72); Def-x (77); Def-split (76) \right\} $\\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg (Leaf a) = h1 a$ \\
-      $avg (Fork (l,r)) = h2 ((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length (Leaf a) = k1 1$\\
-      $length (Fork (l,r)) = k2 ((avg l, length l), (avg r), length r)$\\
-    \end{array}\right
-  \end{array}\right
-  \equiv \left\{ Def-length para LTree: contar Leaf - k1 := const 1; k2 = uncurry (+) \cdot \left\langle \pi2, \pi2\right\rangle; def-const   \right\} \\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg (Leaf a) = h1 a$ \\
-      $avg (Fork (l,r)) = h2 ((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length (Leaf a) = 1$ \\
-      $length (Fork (l,r)) = uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-  \end{array}\right
-  \equiv \left\{ h1 := id; h2 := (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle; Def-id (73)  \right\} \\
-  \left\{\begin{array}{lr}
-    \left\{\begin{array}{lr}
-      $avg (Leaf a) = a$ \\
-      $avg (Fork (l,r)) =  (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle ((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-    \left\{\begin{array}{lr}
-      $length (Leaf a) = 1$ \\
-      $length (Fork (l,r)) = uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle((avg l, length l), (avg r), length r)$ \\
-    \end{array}\right
-  \end{array}\right
-  $\equiv \left\{ Eq - + (27)  \right\}$\\
-  \left\{\begin{array}{lr}
-    $ avg . inLT = [id, (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] \cdot (id + \left\langle avg, length \right\rangle ^{2})$ \\
-    $ length . inLT = [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \cdot (id + \left\langle avg, length \right\rangle ^{2})$ \\
-  \end{array}\right
-  $\equiv \left\{ Fokkinga (52)  \right\} $\\
-  $\langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] , [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \rangle \rrparenthesis$\\
-  $\equiv \left\{ Lei da Troca (28)  \right\} $\\
-  $\langle avg, length \rangle = \llparenthesis [\left\langle id, const 1 \right\rangle , \left\langle (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle \right\rangle  (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] , [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \rangle \rrparenthesis$\\
-\end{eqnarray*}
+Para \ensuremath{\Varid{q}} temos que voltar a calcular a média das duas sub-árvores.
+\\
+\begin{hscode}\SaveRestoreHook
+\column{B}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{23}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{E}{@{}>{\hspre}l<{\hspost}@{}}%
+\>[B]{}\Varid{qLTree}\mathrel{=}\conj{\Varid{auxFuncLTree}}{\Varid{sumSizes}}\;\mathbf{where}{}\<[E]%
+\\
+\>[B]{}\hsindent{23}{}\<[23]%
+\>[23]{}\Varid{auxFuncLTree}\;((\Varid{a1},\Varid{n1}),(\Varid{a2},\Varid{n2}))\mathrel{=}(((\Varid{a1}\mathbin{*}\Varid{n1})\mathbin{+}(\Varid{a2}\mathbin{*}\Varid{n2}))\mathbin{/}(\Varid{n1}\mathbin{+}\Varid{n2})){}\<[E]%
+\\
+\>[B]{}\hsindent{23}{}\<[23]%
+\>[23]{}\Varid{sumSizes}\;((\Varid{a1},\Varid{n1}),(\Varid{a2},\Varid{n2}))\mathrel{=}\Varid{n1}\mathbin{+}\Varid{n2}{}\<[E]%
+\ColumnHook
+\end{hscode}\resethooks
 
-Optou-se por utilizar a versão \textit{pointwise} para o calculo da média entre dois ramos, nomeadamente através da média ponderada:
-
-\begin{eqnarray*}
-  avg ((avgl, ll),(avgr, lr)) = ((avgl * ll) + (avgr * lr)) / (ll + lr)
-\end{eqnarray*}
+\\
+Com a função \ensuremath{\Varid{avgLTree}} vamos calcular o produto com a média e comprimento de uma árvore e utilizar a função p1 para retirar apenas a média.
+Juntando as duas funções no \ensuremath{\alt{\cdot }{\cdot }} que será o gene do catamorfismo das LTrees, chegamos à definição da solução da função \ensuremath{\Varid{avgLTree}}:
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{4}{@{}>{\hspre}l<{\hspost}@{}}%
-\column{7}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{25}{@{}>{\hspre}l<{\hspost}@{}}%
+\column{71}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
 \>[B]{}\Varid{avgLTree}\mathrel{=}\p1\comp \llparenthesis\, \Varid{gene}\,\rrparenthesis\;\mathbf{where}{}\<[E]%
 \\
-\>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{g}\;{}\<[7]%
-\>[7]{}((\Varid{avgl},\Varid{ll}),(\Varid{avgr},\Varid{lr}))\mathrel{=}((\Varid{avgl}\mathbin{*}\Varid{ll})\mathbin{+}(\Varid{avgr}\mathbin{*}\Varid{lr}))\mathbin{/}(\Varid{ll}\mathbin{+}\Varid{lr}){}\<[E]%
+\>[B]{}\hsindent{25}{}\<[25]%
+\>[25]{}\Varid{gene}\mathrel{=}\alt{\conj{\Varid{id}}{\underline{\mathrm{1}}}}{\conj{\Varid{auxFuncLTree}}{\Varid{sumSizes}}}\;\mathbf{where}{}\<[E]%
 \\
-\>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\mbox{\onelinecomment  t = uncurry (+) . mulUnc >< mulUnc}{}\<[E]%
+\>[25]{}\hsindent{46}{}\<[71]%
+\>[71]{}\Varid{auxFuncLTree}\;((\Varid{a1},\Varid{n1}),(\Varid{a2},\Varid{n2}))\mathrel{=}(((\Varid{a1}\mathbin{*}\Varid{n1})\mathbin{+}(\Varid{a2}\mathbin{*}\Varid{n2}))\mathbin{/}(\Varid{n1}\mathbin{+}\Varid{n2})){}\<[E]%
 \\
-\>[B]{}\hsindent{4}{}\<[4]%
-\>[4]{}\Varid{gene}\mathrel{=}\alt{\conj{\Varid{id}}{\underline{\mathrm{1}}}}{\conj{\Varid{g}}{\uncurry{(\mathbin{+})}\comp (\p2\times\p2)}}{}\<[E]%
+\>[25]{}\hsindent{46}{}\<[71]%
+\>[71]{}\Varid{sumSizes}\;((\Varid{a1},\Varid{n1}),(\Varid{a2},\Varid{n2}))\mathrel{=}\Varid{n1}\mathbin{+}\Varid{n2}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
 

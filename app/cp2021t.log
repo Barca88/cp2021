@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.5.4)  15 JUN 2021 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.5.4)  15 JUN 2021 22:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1644,17 +1644,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 1620--1622
 \openout4 = `cp2021t.ptb'.
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 1634--1636
+<cp2021t_media/first.jpg, id=237, 963.6pt x 722.7pt>
+File: cp2021t_media/first.jpg Graphic file (type jpg)
+<use cp2021t_media/first.jpg>
+Package pdftex.def Info: cp2021t_media/first.jpg  used on input line 1634.
+(pdftex.def)             Requested size: 364.19667pt x 273.14014pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1638--1640
 
  []
 
 \openout4 = `cp2021t.ptb'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1649--1651
-
- []
-
+[14 <./cp2021t_media/first.jpg>]
+<cp2021t_media/second.jpg, id=243, 963.6pt x 722.7pt>
+File: cp2021t_media/second.jpg Graphic file (type jpg)
+<use cp2021t_media/second.jpg>
+Package pdftex.def Info: cp2021t_media/second.jpg  used on input line 1661.
+(pdftex.def)             Requested size: 364.19667pt x 273.14014pt.
 \openout4 = `cp2021t.ptb'.
 
 \openout4 = `cp2021t.ptb'.
@@ -1663,47 +1670,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 1649--1651
 
 \openout4 = `cp2021t.ptb'.
 
-
-Overfull \hbox (97.39603pt too wide) in paragraph at lines 1698--1709
- [][] 
- []
-
-
-Overfull \hbox (97.39603pt too wide) in paragraph at lines 1698--1709
- [][][][] 
- []
-
-
-Overfull \hbox (97.39603pt too wide) in paragraph at lines 1698--1709
- [][] 
- []
-
 \openout4 = `cp2021t.ptb'.
 
-<cp2021t_media/Cn+1.png, id=237, 1209.96371pt x 1068.40392pt>
+<cp2021t_media/Cn+1.png, id=244, 1209.96371pt x 1068.40392pt>
 File: cp2021t_media/Cn+1.png Graphic file (type png)
 <use cp2021t_media/Cn+1.png>
-Package pdftex.def Info: cp2021t_media/Cn+1.png  used on input line 1721.
+Package pdftex.def Info: cp2021t_media/Cn+1.png  used on input line 1722.
 (pdftex.def)             Requested size: 364.19667pt x 321.58331pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ! Double subscript.
-l.1728 c_n_
+l.1729 c_n_
            +_1 = \frac{4n+2}{n+2} \times C_n
 ? 
 ! Double subscript.
-l.1728 c_n_+_
+l.1729 c_n_+_
              1 = \frac{4n+2}{n+2} \times C_n
 ? 
 ! Double subscript.
-l.1738 f_n_
+l.1739 f_n_
            +_1 = \frac{4n+6}{n+3}
 ? 
 ! Double subscript.
-l.1738 f_n_+_
+l.1739 f_n_+_
              1 = \frac{4n+6}{n+3}
 ? 
+[15 <./cp2021t_media/second.jpg>]
 
 ! Package inputenc Error: Unicode char ² (U+B2)
 (inputenc)                not set up for use with LaTeX.
@@ -1712,16 +1706,15 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1744 \Leftrightarrow y = \frac{6}{n²+5n+6}
+l.1745 \Leftrightarrow y = \frac{6}{n²+5n+6}
                                              
 ? 
-[14]
 ! Double subscript.
-l.1748 f_n_
+l.1749 f_n_
            +_1 = f_n + \frac{6}{n²+5n+6}
 ? 
 ! Double subscript.
-l.1748 f_n_+_
+l.1749 f_n_+_
              1 = f_n + \frac{6}{n²+5n+6}
 ? 
 
@@ -1732,7 +1725,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1748 f_n_+_1 = f_n + \frac{6}{n²+5n+6}
+l.1749 f_n_+_1 = f_n + \frac{6}{n²+5n+6}
                                          
 ? 
 
@@ -1743,23 +1736,23 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1752 g_n = n²
+l.1753 g_n = n²
                 +5n+6
 ? 
 ! Double subscript.
-l.1756 f_n_
+l.1757 f_n_
            +_1 = f_n + \frac{6}{g_n}
 ? 
 ! Double subscript.
-l.1756 f_n_+_
+l.1757 f_n_+_
              1 = f_n + \frac{6}{g_n}
 ? 
 ! Double subscript.
-l.1759 g_n_
+l.1760 g_n_
            +_1 = n²+7n+12
 ? 
 ! Double subscript.
-l.1759 g_n_+_
+l.1760 g_n_+_
              1 = n²+7n+12
 ? 
 
@@ -1770,7 +1763,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1759 g_n_+_1 = n²
+l.1760 g_n_+_1 = n²
                     +7n+12
 ? 
 
@@ -1781,7 +1774,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1763 n²
+l.1764 n²
           +7n+12 = n²+5n+6+y
 ? 
 
@@ -1792,1608 +1785,1120 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1763 n²+7n+12 = n²
+l.1764 n²+7n+12 = n²
                       +5n+6+y
 ? 
 ! Double subscript.
-l.1769 g_n_
+l.1770 g_n_
            +_1 = g_n+2n+6
 ? 
 ! Double subscript.
-l.1769 g_n_+_
+l.1770 g_n_+_
              1 = g_n+2n+6
 ? 
+[16 <./cp2021t_media/Cn+1.png (PNG copy)>]
 ! Double subscript.
-l.1777 h_n_
+l.1778 h_n_
            +_1 = 2n+8
 ? 
 ! Double subscript.
-l.1777 h_n_+_
+l.1778 h_n_+_
              1 = 2n+8
 ? 
-[15 <./cp2021t_media/Cn+1.png (PNG copy)>]
 ! Double subscript.
-l.1787 h_n_
+l.1788 h_n_
            +_1 = h_n+2
 ? 
 ! Double subscript.
-l.1787 h_n_+_
+l.1788 h_n_+_
              1 = h_n+2
 ? 
 ! Double subscript.
-l.1791 c_n_
+l.1792 c_n_
            +_1 = f_n \times c_n
 ? 
 ! Double subscript.
-l.1791 c_n_+_
+l.1792 c_n_+_
              1 = f_n \times c_n
 ? 
 \openout4 = `cp2021t.ptb'.
 
 \openout4 = `cp2021t.ptb'.
 
-\openout4 = `cp2021t.ptb'.
-
-! Undefined control sequence.
-l.1864   \xymatrix
-                   {
-? 
-! Undefined control sequence.
-l.1866      \ar
-               [r]^{outLT}
-? 
-! Undefined control sequence.
-l.1867      \ar
-               [d]_{\llparenthesis length \rrparenthesis}
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1882 
+       
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1868 &
-        
+l.1882 
+       
 ? 
-! Undefined control sequence.
-l.1870     \ar
-              [d]^{id + id \times length}
-? 
-! Undefined control sequence.
-l.1875     \ar
-              [l]_{[const 1, succ \cdot \pi1]}
-? 
-! Incomplete \ifcase; all text was ignored after line 1877.
+! Missing } inserted.
 <inserted text> 
-                \fi 
-l.1877 \end{eqnarray*}
-                      
+                }
+l.1882 
+       
+? 
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.1882 
+       
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1882 
+       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1877 \end{eqnarray*}
-                      
-? 
-! Extra alignment tab has been changed to \cr.
-<template> \egroup \endtemplate 
-                                
-l.1877 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
-                                                  \def \reserved@a {& &}\or ...
-l.1877 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1877 \end{eqnarray*}
-                      
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1877 \end{eqnarray*}
-                      
+l.1882 
+       
 ? 
 ! Missing $$ inserted.
 <to be read again> 
-                   \begingroup 
-l.1877 \end{eqnarray*}
-                      
+                   \par 
+l.1882 
+       
 ? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1877 \end{eqnarray*}
-                      
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1877 \end{eqnarray*}
-                      
-? 
-
-Underfull \hbox (badness 10000) in alignment at lines 1877--1877
- [][][][]
- []
-
-! Undefined control sequence.
-l.1883   \xymatrix
-                   {
-? 
-! Undefined control sequence.
-l.1885      \ar
-               [r]^{outLT}
-? 
-! Undefined control sequence.
-l.1886      \ar
-               [d]_{\llparenthesis length \rrparenthesis}
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1887 &
-        
-? 
-! Undefined control sequence.
-l.1889     \ar
-              [d]_{id + id \times <avg, length>}
-? 
-! Undefined control sequence.
-l.1894     \ar
-              [l]_{[1, succ \cdot \pi2]}
-? 
-! Incomplete \ifcase; all text was ignored after line 1896.
-<inserted text> 
-                \fi 
-l.1896 \end{eqnarray*}
-                      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1896 \end{eqnarray*}
-                      
-? 
-! Extra alignment tab has been changed to \cr.
-<template> \egroup \endtemplate 
-                                
-l.1896 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
-                                                  \def \reserved@a {& &}\or ...
-l.1896 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1896 \end{eqnarray*}
-                      
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1896 \end{eqnarray*}
-                      
-? 
-! Missing $$ inserted.
-<to be read again> 
-                   \begingroup 
-l.1896 \end{eqnarray*}
-                      
-? 
-[16]
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1896 \end{eqnarray*}
-                      
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1896 \end{eqnarray*}
-                      
-? 
-
-Underfull \hbox (badness 10000) in alignment at lines 1896--1896
- [][][][]
- []
-
-! Undefined control sequence.
-l.1901   \xymatrix
-                   {
-? 
-! Undefined control sequence.
-l.1903      \ar
-               [r]^{outLT}
-? 
-! Undefined control sequence.
-l.1904      \ar
-               [d]_{\llparenthesis avg \rrparenthesis}
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1905 &
-        
-? 
-! Undefined control sequence.
-l.1907     \ar
-              [d]_{id + id \times <avg, length>}
-? 
-! Undefined control sequence.
-l.1912     \ar
-              [l]_{[id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]}
-? 
-! Incomplete \ifcase; all text was ignored after line 1914.
-<inserted text> 
-                \fi 
-l.1914 \end{eqnarray*}
-                      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1914 \end{eqnarray*}
-                      
-? 
-! Extra alignment tab has been changed to \cr.
-<template> \egroup \endtemplate 
-                                
-l.1914 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
-                                                  \def \reserved@a {& &}\or ...
-l.1914 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1914 \end{eqnarray*}
-                      
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1914 \end{eqnarray*}
-                      
-? 
-! Missing $$ inserted.
-<to be read again> 
-                   \begingroup 
-l.1914 \end{eqnarray*}
-                      
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1914 \end{eqnarray*}
-                      
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1914 \end{eqnarray*}
-                      
-? 
-
-Underfull \hbox (badness 10000) in alignment at lines 1914--1914
- [][][][]
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1919   $
-           <avg, length> = \llparenthesis \langle  h,k \rangle  \rrparenthes...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1919   $ <avg, length> = \llparenthesis
-                                          \langle  h,k \rangle  \rrparenthes...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Incomplete \ifcase; all text was ignored after line 1920.
-<inserted text> 
-                \fi 
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1920   $
-           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1920   $ \equiv
-                  \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Incomplete \ifcase; all text was ignored after line 1921.
-<inserted text> 
-                \fi 
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1921   $
-           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1921   $ <avg, length> = \llparenthesis
-                                          \langle  [id, (id + \pi_{2} * \pi_...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Incomplete \ifcase; all text was ignored after line 1922.
-<inserted text> 
-                \fi 
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1922   $
-           \equiv \{ Lei da troca (28) \} $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1922   $ \equiv
-                  \{ Lei da troca (28) \} $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Incomplete \ifcase; all text was ignored after line 1923.
-<inserted text> 
-                \fi 
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1923   $
-           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1923   $ <avg, length> = \llparenthesis
-                                          [\langle id, const 1 \rangle  , \l...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1924 \end
-           {eqnarray*}
-? 
-! Incomplete \ifcase; all text was ignored after line 1924.
-<inserted text> 
-                \fi 
-l.1924 \end
-           {eqnarray*}
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1924 \end
-           {eqnarray*}
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1924 \end
-           {eqnarray*}
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1924 \end
-           {eqnarray*}
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1924 \end
-           {eqnarray*}
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1924 \end
-           {eqnarray*}
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1924 \end
-           {eqnarray*}
-? 
-\openout4 = `cp2021t.ptb'.
-
-! Undefined control sequence.
-l.1945   \xymatrix
-                   {
-? 
-! Undefined control sequence.
-l.1947      \ar
-               [r]_{outLT}
-? 
-! Undefined control sequence.
-l.1948      \ar
-               [d]^{\llparenthises avg, length \rrparenthesis}
-? 
-! Undefined control sequence.
-l.1948      \ar[d]^{\llparenthises
-                                   avg, length \rrparenthesis}
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1949 &
-        
-? 
-! Undefined control sequence.
-l.1951     \ar
-              [d]_{id + <avg, length>^{2}}
-? 
-! Incomplete \ifcase; all text was ignored after line 1957.
-<inserted text> 
-                \fi 
-l.1957 \end{eqnarray*}
-                      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1957 \end{eqnarray*}
-                      
-? 
-! Extra alignment tab has been changed to \cr.
-<template> \egroup \endtemplate 
-                                
-l.1957 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
-                                                  \def \reserved@a {& &}\or ...
-l.1957 \end{eqnarray*}
-                      
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1957 \end{eqnarray*}
-                      
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1957 \end{eqnarray*}
-                      
-? 
-! Missing $$ inserted.
-<to be read again> 
-                   \begingroup 
-l.1957 \end{eqnarray*}
-                      
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1957 \end{eqnarray*}
-                      
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1957 \end{eqnarray*}
-                      
-? 
-
-Underfull \hbox (badness 10000) in alignment at lines 1957--1957
- [][][][]
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1960   $
-           \langle avg, length \rangle = \llparenthesis \langle h, k \rangle...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1960   $ \langle
-                   avg, length \rangle = \llparenthesis \langle h, k \rangle...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Incomplete \ifcase; all text was ignored after line 1961.
-<inserted text> 
-                \fi 
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1961   $
-           \equiv \left\{ Fokkinga (52) \right\} $\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1961   $ \equiv
-                  \left\{ Fokkinga (52) \right\} $\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-! Incomplete \ifcase; all text was ignored after line 1962.
-<inserted text> 
-                \fi 
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1962   \left
-              \{\begin{array}{lr}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1963     $ avg \cdot
-                       inLT = h \cdot (id + \left\langle avg, length \right\...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1964     $
-             length \cdot inLT = k \cdot (id + \left\langle avg, length \rig...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1964     $ length \cdot
-                          inLT = k \cdot (id + \left\langle avg, length \rig...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1965   \end
-             {array}\right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   $
-l.1966   $
-          \equiv \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1966   $
-          \equiv \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1966   $\equiv
-                 \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-! Incomplete \ifcase; all text was ignored after line 1967.
-<inserted text> 
-                \fi 
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1967   \left
-              \{\begin{array}{lr}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1969       $avg \cdot
-                        inLT = h1$ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1970       $
-              avg \cdot inLT = h2 \cdot \left\langle avg, length \right\rang...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1970       $avg \cdot
-                        inLT = h2 \cdot \left\langle avg, length \right\rang...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1971     \end
-               {array}\right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \left 
-l.1972     \left
-                \{\begin{array}{lr}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1973       $length \cdot
-                           inLT = k1$ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1974       $
-              length \cdot inLT = k2 \cdot \left\langle avg, length \right\r...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1974       $length \cdot
-                           inLT = k2 \cdot \left\langle avg, length \right\r...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1975     \end
-               {array}\right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \unskip 
-l.1976   \end{array}
-                    \right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   $
-l.1977   $
-          \equiv \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72)...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.1977   $
-          \equiv \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72)...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1977   $\equiv
-                 \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72)...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-! Incomplete \ifcase; all text was ignored after line 1978.
-<inserted text> 
-                \fi 
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.1978   \left
-              \{\begin{array}{lr}
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \left 
-l.1983     \left
-                \{\begin{array}{lr}
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \unskip 
-l.1987   \end{array}
-                    \right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \equiv 
-l.1988   \equiv
-                \left\{ Def-length para LTree: contar Leaf - k1 := const 1; ...
-
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \left 
-l.1994     \left
-                \{\begin{array}{lr}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1996 ...$length (Fork (l,r)) = uncurry (+) \cdot
-                                                   \left\langle\pi2, \pi2 \r...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1997     \end
-               {array}\right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \unskip 
-l.1998   \end{array}
-                    \right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \equiv 
-l.1999   \equiv
-                \left\{ h1 := id; h2 := (+) (mul p1) (mul p2) / uncurry (+) ...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2003 ...+) (mul p1) (mul p2) / uncurry (+) \cdot
-                                                   \left\langle \pi2, \pi2 \...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2004     \end
-               {array}\right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \left 
-l.2005     \left
-                \{\begin{array}{lr}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2007 ...$length (Fork (l,r)) = uncurry (+) \cdot
-                                                   \left\langle\pi2, \pi2 \r...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2008     \end
-               {array}\right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \unskip 
-l.2009   \end{array}
-                    \right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   $
-l.2010   $
-          \equiv \left\{ Eq - + (27)  \right\}$\\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.2010   $
-          \equiv \left\{ Eq - + (27)  \right\}$\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2010   $\equiv
-                 \left\{ Eq - + (27)  \right\}$\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-! Incomplete \ifcase; all text was ignored after line 2011.
-<inserted text> 
-                \fi 
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.2011   \left
-              \{\begin{array}{lr}
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2012 ...+) (mul p1) (mul p2) / uncurry (+) \cdot
-                                                   \left\langle \pi2, \pi2 \...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2013     $
-             length . inLT = [const 1, uncurry (+) \cdot \left\langle\pi2, \...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2013 ...gth . inLT = [const 1, uncurry (+) \cdot
-                                                   \left\langle\pi2, \pi2 \r...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2014   \end
-             {array}\right
-? 
-! Missing delimiter (. inserted).
-<to be read again> 
-                   $
-l.2015   $
-          \equiv \left\{ Fokkinga (52)  \right\} $\\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.2015   $
-          \equiv \left\{ Fokkinga (52)  \right\} $\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2015   $\equiv
-                 \left\{ Fokkinga (52)  \right\} $\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Incomplete \ifcase; all text was ignored after line 2016.
-<inserted text> 
-                \fi 
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.2016   $
-          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2016   $\langle
-                  avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Incomplete \ifcase; all text was ignored after line 2017.
-<inserted text> 
-                \fi 
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.2017   $
-          \equiv \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2017   $\equiv
-                 \left\{ Lei da Troca (28)  \right\} $\\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Incomplete \ifcase; all text was ignored after line 2018.
-<inserted text> 
-                \fi 
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.2018   $
-          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2018   $\langle
-                  avg, length \rangle = \llparenthesis [\left\langle id, con...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2019 \end
-           {eqnarray*}
-? 
-! Incomplete \ifcase; all text was ignored after line 2019.
-<inserted text> 
-                \fi 
-l.2019 \end
-           {eqnarray*}
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.2019 \end
-           {eqnarray*}
-? 
-! Extra \or.
-\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
-                                                  \def \reserved@a {&}\else ...
-l.2019 \end
-           {eqnarray*}
-? 
-! Extra \else.
-\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
-                                                  \let \reserved@a \@empty \...
-l.2019 \end
-           {eqnarray*}
-? 
-
-! LaTeX Error: Too many columns in eqnarray environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2019 \end
-           {eqnarray*}
-? 
-! Extra \fi.
-\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
-                                                  \reserved@a \if@eqnsw \@eq...
-l.2019 \end
-           {eqnarray*}
-? 
-! Missing { inserted.
-<inserted text> 
-                {
-l.2019 \end
-           {eqnarray*}
-? 
-
-Overfull \hbox (571.89189pt too wide) in alignment at lines 1959--2019
- [][][] []
- []
-
 [17]
+! Misplaced alignment tab character &.
+\reserved@a ->&
+               
+l.1883 \end{eqnarray*}
+                      
+? 
+! Misplaced \cr.
+\@@eqncr ...l \@eqnswtrue \global \@eqcnt \z@ \cr 
+                                                  
+l.1883 \end{eqnarray*}
+                      
+? 
+! Extra }, or forgotten \endgroup.
+\endeqnarray ->\@@eqncr \egroup 
+                                \global \advance \c@equation \m@ne $$\@ignor...
+l.1883 \end{eqnarray*}
+                      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1883 \end{eqnarray*}
+                      
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.1883 \end{eqnarray*}
+                      
+? 
 \openout4 = `cp2021t.ptb'.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1901--1903
+
+ []
+
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { A^{+} \a...
+l.1911 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { A^{+} \a...
+l.1911 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { A^{+} \ar [rr]^{\ensurem...
+l.1911 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1911 }
+        
+? 
+! Undefined control sequence.
+<argument> ...rowsep {3pc} {\xymatrix { A^{+} \ar 
+                                                  [rr]^{\ensuremath {\Varid ...
+l.1911 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ... [rr]^{\ensuremath {\Varid {avg}}} &
+                                                   & A }} 
+l.1911 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...rr]^{\ensuremath {\Varid {avg}}} & &
+                                                   A }} 
+l.1911 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...{\ensuremath {\Varid {avg}}} & & A }
+                                                  } 
+l.1911 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...\ensuremath {\Varid {avg}}} & & A }}
+                                                   
+l.1911 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.1911 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1912 
+       
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { A^{+} \a...
+l.1924 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { A^{+} \a...
+l.1924 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { A^{+} \ar [rr]^{\ensurem...
+l.1924 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1924 }
+        
+? 
+! Undefined control sequence.
+<argument> ...rowsep {3pc} {\xymatrix { A^{+} \ar 
+                                                  [rr]^{\ensuremath {\length...
+l.1924 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ... \ar [rr]^{\ensuremath {\length }} &
+                                                   & N_0 }} 
+l.1924 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...ar [rr]^{\ensuremath {\length }} & &
+                                                   N_0 }} 
+l.1924 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...]^{\ensuremath {\length }} & & N_0 }
+                                                  } 
+l.1924 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...^{\ensuremath {\length }} & & N_0 }}
+                                                   
+l.1924 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.1924 }
+        
+? 
+
+LaTeX Warning: Command \c invalid in math mode on input line 1925.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 1925.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1925 Com estas duas definiçõ
+                                es podemos dizer que a média de uma lista c...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1925 Com estas duas definiçõ
+                                es podemos dizer que a média de uma lista c...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 1925.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1925 ...uas definições podemos dizer que a mé
+                                                  dia de uma lista constitui...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1925 ...uas definições podemos dizer que a mé
+                                                  dia de uma lista constitui...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 1925.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1925 ...onstituida por elementos do tipo A será
+                                                   do tipo A e o tamanho des...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1925 ...onstituida por elementos do tipo A será
+                                                   do tipo A e o tamanho des...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 1925.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1925 ...rá do tipo A e o tamanho dessa lista é
+                                                   um número natural.
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1925 ...rá do tipo A e o tamanho dessa lista é
+                                                   um número natural.
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 1925.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1925 ...tipo A e o tamanho dessa lista é um nú
+                                                  mero natural.
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1925 ...tipo A e o tamanho dessa lista é um nú
+                                                  mero natural.
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1926 
+       
+? 
+Missing character: There is no � in font cmex10!
+Missing character: There is no � in font cmex10!
+Missing character: There is no � in font cmex10!
+Missing character: There is no � in font cmex10!
+Missing character: There is no � in font cmex10!
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { A^{+} \a...
+l.1941 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { A^{+} \a...
+l.1941 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { A^{+} \ar [d]_-{\ensurem...
+l.1941 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1941 }
+        
+? 
+! Undefined control sequence.
+<argument> ...rowsep {3pc} {\xymatrix { A^{+} \ar 
+                                                  [d]_-{\ensuremath {\mathbi...
+l.1941 }
+        
+? 
+! Undefined control sequence.
+<argument> ...id {avg},\length \mathbin {>}}} \ar 
+                                                  [rr]^-{\ensuremath {\Varid...
+l.1941 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...{\ensuremath {\Varid {outLsingl}}} &
+                                                   & A + (A \times A^{+}) \a...
+l.1941 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...ensuremath {\Varid {outLsingl}}} & &
+                                                   A + (A \times A^{+}) \ar ...
+l.1941 }
+        
+? 
+! Undefined control sequence.
+<argument> ...ngl}}} & & A + (A \times A^{+}) \ar 
+                                                  [d]^{\ensuremath {\Varid {...
+l.1941 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...q}\mskip 1.5mu]))}}\\ A \times N_0 &
+                                                   & A + A \times A \times N...
+l.1941 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...\mskip 1.5mu]))}}\\ A \times N_0 & &
+                                                   A + A \times A \times N_0...
+l.1941 }
+        
+? 
+! Undefined control sequence.
+<argument> ...0 & & A + A \times A \times N_0 \ar 
+                                                  [ll]^-{[b,q]} }} 
+l.1941 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...mes A \times N_0 \ar [ll]^-{[b,q]} }
+                                                  } 
+l.1941 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...es A \times N_0 \ar [ll]^-{[b,q]} }}
+                                                   
+l.1941 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.1941 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1942 
+       
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { A \ar [r...
+l.1954 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { A \ar [r...
+l.1954 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { A \ar [rr]^{\ensuremath ...
+l.1954 }
+        
+? 
+! Undefined control sequence.
+<argument> ...trixrowsep {3pc} {\xymatrix { A \ar 
+                                                  [rr]^{\ensuremath {\Varid ...
+l.1954 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1954 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...ar [rr]^{\ensuremath {\Varid {b}}} &
+                                                   & A \times N_0 }} 
+l.1954 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ... [rr]^{\ensuremath {\Varid {b}}} & &
+                                                   A \times N_0 }} 
+l.1954 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...ath {\Varid {b}}} & & A \times N_0 }
+                                                  } 
+l.1954 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...th {\Varid {b}}} & & A \times N_0 }}
+                                                   
+l.1954 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.1954 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1955 
+       
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Too many }'s.
+\hsnewpar ...rindent =0pt\par \vskip #1\noindent }
+                                                  
+l.1959 \begin{hscode}
+                     \SaveRestoreHook
+? 
+Runaway argument?
+\resethooks 
+! Paragraph ended before \PT@scantoend was complete.
+<to be read again> 
+                   \par 
+l.1965 
+       
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1967 C
+        aso em que temos o produto de um elemento da lista com o produto da ...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1967--1969
+ 
+ []
+
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { A \times...
+l.1977 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { A \times...
+l.1977 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { A \times (A \times N_0) ...
+l.1977 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1977 }
+        
+? 
+! Undefined control sequence.
+<argument> ...atrix { A \times (A \times N_0) \ar 
+                                                  [rr]^{\ensuremath {\Varid ...
+l.1977 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...ar [rr]^{\ensuremath {\Varid {q}}} &
+                                                   & A \times N_0 }} 
+l.1977 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ... [rr]^{\ensuremath {\Varid {q}}} & &
+                                                   A \times N_0 }} 
+l.1977 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...ath {\Varid {q}}} & & A \times N_0 }
+                                                  } 
+l.1977 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...th {\Varid {q}}} & & A \times N_0 }}
+                                                   
+l.1977 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.1977 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1978 
+       
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1982 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.1982 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1982 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1982 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1982 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Extra }, or forgotten \endgroup.
+\hsnewpar ...rindent =0pt\par \vskip #1\noindent }
+                                                  
+l.1982 \begin{hscode}
+                     \SaveRestoreHook
+? 
+Runaway argument?
+\resethooks 
+! Paragraph ended before \PT@scantoend was complete.
+<to be read again> 
+                   \par 
+l.1992 
+       
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1994 J
+        untando então as definições das ultimas duas funções conseguimo...
+
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1994--1997
+ 
+ []
+
+\openout4 = `cp2021t.ptb'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2014--2015
+ 
+ []
+
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { LTree A ...
+l.2027 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { LTree A ...
+l.2027 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { LTree A \ar [d]_-{\ensur...
+l.2027 }
+        
+? 
+! Undefined control sequence.
+<argument> ...wsep {3pc} {\xymatrix { LTree A \ar 
+                                                  [d]_-{\ensuremath {\mathbi...
+l.2027 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2027 }
+        
+? 
+! Undefined control sequence.
+<argument> ...id {avg},\length \mathbin {>}}} \ar 
+                                                  [rr]^-{\ensuremath {\Varid...
+l.2027 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...-{\ensuremath {\Varid {outLTree}}} &
+                                                   & A + (LTree A \times LTr...
+l.2027 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...\ensuremath {\Varid {outLTree}}} & &
+                                                   A + (LTree A \times LTree...
+l.2027 }
+        
+? 
+! Undefined control sequence.
+<argument> ... & A + (LTree A \times LTree A) \ar 
+                                                  [d]^{\ensuremath {\Varid {...
+l.2027 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...\,\rrparenthesis }}\\ A \times N_0 &
+                                                   & A + ((A \times N_0) \ti...
+l.2027 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...\rrparenthesis }}\\ A \times N_0 & &
+                                                   A + ((A \times N_0) \time...
+l.2027 }
+        
+? 
+! Undefined control sequence.
+<argument> ...mes N_0) \times (A \times N_0)) \ar 
+                                                  [ll]^-{[b,q]} }} 
+l.2027 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ... (A \times N_0)) \ar [ll]^-{[b,q]} }
+                                                  } 
+l.2027 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...(A \times N_0)) \ar [ll]^-{[b,q]} }}
+                                                   
+l.2027 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.2027 }
+        
+? 
+
+LaTeX Warning: Command \c invalid in math mode on input line 2029.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 2029.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.2029 Assim, temos os tipos das funçõ
+                                        es \ensuremath{\Varid{b}} e \ensurem...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.2029 Assim, temos os tipos das funçõ
+                                        es \ensuremath{\Varid{b}} e \ensurem...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2031 
+       
+? 
+Missing character: There is no � in font cmex10!
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { A \ar [r...
+l.2039 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { A \ar [r...
+l.2039 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { A \ar [rr]^{\ensuremath ...
+l.2039 }
+        
+? 
+! Undefined control sequence.
+<argument> ...trixrowsep {3pc} {\xymatrix { A \ar 
+                                                  [rr]^{\ensuremath {\Varid ...
+l.2039 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2039 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...ar [rr]^{\ensuremath {\Varid {b}}} &
+                                                   & A \times N_0 }} 
+l.2039 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ... [rr]^{\ensuremath {\Varid {b}}} & &
+                                                   A \times N_0 }} 
+l.2039 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...ath {\Varid {b}}} & & A \times N_0 }
+                                                  } 
+l.2039 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...th {\Varid {b}}} & & A \times N_0 }}
+                                                   
+l.2039 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.2039 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2040 
+       
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep 
+                            {2pc}\xymatrixrowsep {3pc} {\xymatrix { A + ((A ...
+l.2050 }
+        
+? 
+! Undefined control sequence.
+<argument>  \xymatrixcolsep {2pc}\xymatrixrowsep 
+                                                 {3pc} {\xymatrix { A + ((A ...
+l.2050 }
+        
+? 
+! Undefined control sequence.
+<argument> ...pc}\xymatrixrowsep {3pc} {\xymatrix 
+                                                  { A + ((A \times N_0) \tim...
+l.2050 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2050 }
+        
+? 
+! Undefined control sequence.
+<argument> ...mes N_0) \times (A \times N_0)) \ar 
+                                                  [rr]^{\ensuremath {\Varid ...
+l.2050 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ...ar [rr]^{\ensuremath {\Varid {q}}} &
+                                                   & A \times N_0 }} 
+l.2050 }
+        
+? 
+! Misplaced alignment tab character &.
+<argument> ... [rr]^{\ensuremath {\Varid {q}}} & &
+                                                   A \times N_0 }} 
+l.2050 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...ath {\Varid {q}}} & & A \times N_0 }
+                                                  } 
+l.2050 }
+        
+? 
+! Extra }, or forgotten $.
+<argument> ...th {\Varid {q}}} & & A \times N_0 }}
+                                                   
+l.2050 }
+        
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.2050 }
+        
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2051 
+       
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+! Extra }, or forgotten \endgroup.
+\hsnewpar ...rindent =0pt\par \vskip #1\noindent }
+                                                  
+l.2056 \begin{hscode}
+                     \SaveRestoreHook
+? 
+Runaway argument?
+\resethooks \\ 
+! Paragraph ended before \PT@scantoend was complete.
+<to be read again> 
+                   \par 
+l.2063 
+       
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 2064--2066
+ 
+ []
+
+\openout4 = `cp2021t.ptb'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2081 C
+        om a função \ensuremath{\Varid{avgLTree}} vamos calcular o produto...
+
+? 
+\openout4 = `cp2021t.ptb'.
+
+
+Overfull \hbox (23.66365pt too wide) in paragraph at lines 2103--2104
+ \OT1/ppl/m/n/10 Inserir em baixo o c[]odigo [][]F#[][][] de-sen-volvido, en-tr
+e [] e []: 
+ []
+
+[18]
 No file cp2021t.ind.
 No file cp2021t.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2065.
-[18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2065.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2121.
+[19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2121.
  (./cp2021t.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2065.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2065.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2121.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2121.
 
 Package rerunfilecheck Info: File `cp2021t.out' has not changed.
 (rerunfilecheck)             Checksum: 7ABFEEFBC6EDEE4EAEC2BDEF142178CE;514.
@@ -3401,44 +2906,50 @@ Package rerunfilecheck Info: File `cp2021t.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2065.
- ) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2121.
+ )
+(\end occurred inside a group at level 3)
+
+### semi simple group (level 3) entered at line 2056 (\begingroup)
+### semi simple group (level 2) entered at line 1982 (\begingroup)
+### semi simple group (level 1) entered at line 1959 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 8879 strings out of 494847
- 129372 string characters out of 6179081
- 228475 words of memory out of 5000000
- 11946 multiletter control sequences out of 15000+600000
+ 8915 strings out of 494847
+ 129973 string characters out of 6179081
+ 227475 words of memory out of 5000000
+ 11976 multiletter control sequences out of 15000+600000
  37278 words of font info for 104 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 42i,18n,42p,447b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/stmaryrd/stmary10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/stmaryrd/stmary7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
-er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/palatino/uplri8a.pfb>
-Output written on cp2021t.pdf (18 pages, 1340188 bytes).
+ 42i,14n,42p,349b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/stmaryrd/stmary10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/stmaryrd/stmary7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
+etic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on cp2021t.pdf (19 pages, 1422560 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
