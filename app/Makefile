@@ -1,0 +1,4 @@
+pdf:
+	rm -f cp2021t.pdf
+	lhs2TeX cp2021t.lhs > cp2021t.tex
+	pdflatex cp2021t
