@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.24)  24 MAY 2021 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.24)  15 JUN 2021 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,125 +528,198 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 305
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `Kn92' on page 1 undefined on input line 340.
+LaTeX Warning: Citation `Kn92' on page 1 undefined on input line 341.
 
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-48.
+49.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
-29.
+30.
  (/usr/share/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 [2]
-Overfull \hbox (6.3199pt too wide) in paragraph at lines 560--563
+Overfull \hbox (6.3199pt too wide) in paragraph at lines 561--564
 []$[]$ \OT1/ppl/m/it/10 e $[]$ s~ao tes-te-mu-nhas de um iso-mor-fismo, isto ^^
 Se, $[] []
  []
 
 [3] [4]
 
-Package hyperref Warning: Suppressing link with empty target on input line 764.
+Package hyperref Warning: Suppressing link with empty target on input line 765.
 
 
 
-LaTeX Warning: Citation `Ol18' on page 5 undefined on input line 764.
+LaTeX Warning: Citation `Ol18' on page 5 undefined on input line 765.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 764.
+Package hyperref Warning: Suppressing link with empty target on input line 765.
 
 
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
-71.
+72.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) [5]
 
-LaTeX Warning: Citation `Ol18' on page 6 undefined on input line 810.
+LaTeX Warning: Citation `Ol18' on page 6 undefined on input line 811.
 
 <cp2021t_media/Bezier_curves.png, id=140, 433.62pt x 180.675pt>
 File: cp2021t_media/Bezier_curves.png Graphic file (type png)
 <use cp2021t_media/Bezier_curves.png>
 Package pdftex.def Info: cp2021t_media/Bezier_curves.png  used on input line 88
-0.
+1.
 (pdftex.def)             Requested size: 364.19667pt x 151.75493pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6] [7 <./cp2021t_media/Bezier_curves.png (PNG copy)>] [8]
+[6] [7 <./cp2021t_media/Bezier_curves.png (PNG copy)>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1059 \end{hscode}
+                   \resethooks
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1059 \end{hscode}
+                   \resethooks
+? 
+[8]
 
-LaTeX Warning: Citation `Ol18' on page 9 undefined on input line 1076.
+LaTeX Warning: Citation `Ol18' on page 9 undefined on input line 1077.
 
 ! Undefined control sequence.
-l.1094 \xymatrix
+l.1095 \xymatrix
                 @C=2cm{
 ? 
 ! Undefined control sequence.
-l.1096            \ar
+l.1097            \ar
                      [d]_-{\ensuremath{\cata{\Varid{g}}}}
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1097 &
+l.1098 &
         
 ? 
 ! Undefined control sequence.
-l.1099            \ar
+l.1100            \ar
                      [d]^{\ensuremath{\Varid{id}\mathbin{+}\cata{\Varid{g}}}}
 ? 
 ! Undefined control sequence.
-l.1100            \ar
+l.1101            \ar
                      [l]_-{\ensuremath{\mathsf{in}}}
 ? 
 ! Undefined control sequence.
-l.1105            \ar
+l.1106            \ar
                      [l]^-{\ensuremath{\Varid{g}}}
 ? 
-! Incomplete \ifcase; all text was ignored after line 1107.
+! Incomplete \ifcase; all text was ignored after line 1108.
 <inserted text> 
                 \fi 
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 ! Extra alignment tab has been changed to \cr.
 <template> \egroup \endtemplate 
                                 
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 ! Extra \or.
 \@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
                                                   \def \reserved@a {& &}\or ...
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 ! Extra \or.
 \@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
                                                   \def \reserved@a {&}\else ...
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 ! Extra \else.
 \@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
                                                   \let \reserved@a \@empty \...
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 ! Missing $$ inserted.
 <to be read again> 
                    \begingroup 
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 
@@ -656,169 +729,1925 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 ! Extra \fi.
 \@@eqncr ...mns in eqnarray environment}\@ehc \fi 
                                                   \reserved@a \if@eqnsw \@eq...
-l.1107 \end{eqnarray*}
+l.1108 \end{eqnarray*}
                       
 ? 
 
-Underfull \hbox (badness 10000) in alignment at lines 1107--1107
+Underfull \hbox (badness 10000) in alignment at lines 1108--1108
  [][][][]
  []
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 1110
-.
-
-
-LaTeX Warning: Citation `Ol18' on page 9 undefined on input line 1111.
 
 
 Package hyperref Warning: Suppressing link with empty target on input line 1111
 .
 
+
+LaTeX Warning: Citation `Ol18' on page 9 undefined on input line 1112.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 1112
+.
+
 [9] [10] [11]
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][][][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][] 
  []
 
 
-Overfull \hbox (8.57883pt too wide) in paragraph at lines 1428--1477
+Overfull \hbox (8.57883pt too wide) in paragraph at lines 1429--1478
  [][] 
  []
 
 [12]
-Overfull \hbox (103.62514pt too wide) in paragraph at lines 1581--1592
+Overfull \hbox (103.62514pt too wide) in paragraph at lines 1582--1593
  [][] 
  []
 
 
-Overfull \hbox (103.62514pt too wide) in paragraph at lines 1581--1592
+Overfull \hbox (103.62514pt too wide) in paragraph at lines 1582--1593
  [][][][] 
  []
 
 
-Overfull \hbox (103.62514pt too wide) in paragraph at lines 1581--1592
+Overfull \hbox (103.62514pt too wide) in paragraph at lines 1582--1593
  [][] 
  []
 
 <cp2021t_media/Cn+1.png, id=232, 1209.96371pt x 1068.40392pt>
 File: cp2021t_media/Cn+1.png Graphic file (type png)
 <use cp2021t_media/Cn+1.png>
-Package pdftex.def Info: cp2021t_media/Cn+1.png  used on input line 1621.
+Package pdftex.def Info: cp2021t_media/Cn+1.png  used on input line 1605.
 (pdftex.def)             Requested size: 364.19667pt x 321.58331pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-! Undefined control sequence.
-<inserted text> ...el {=}\p 1\comp \llparenthesis 
-                                                  \, \Varid {gene}\,\rrparen...
-l.1680 \end{hscode}
-                   \resethooks
+! Double subscript.
+l.1612 c_n_
+           +_1 = \frac{4n+2}{n+2} \times C_n
 ? 
-! Undefined control sequence.
-<inserted text> ... \Varid {gene}\,\rrparenthesis 
-                                                  \;\mathbf {where}{}\<[E]\\...
-l.1680 \end{hscode}
-                   \resethooks
+! Double subscript.
+l.1612 c_n_+_
+             1 = \frac{4n+2}{n+2} \times C_n
 ? 
-! Undefined control sequence.
-<inserted text> ...el {=}\p 1\comp \llparenthesis 
-                                                  \, \Varid {gene}\,\rrparen...
-l.1680 \end{hscode}
-                   \resethooks
+! Double subscript.
+l.1622 f_n_
+           +_1 = \frac{4n+6}{n+3}
 ? 
-! Undefined control sequence.
-<inserted text> ... \Varid {gene}\,\rrparenthesis 
-                                                  \;\mathbf {where}{}\<[E]\\...
-l.1680 \end{hscode}
-                   \resethooks
+! Double subscript.
+l.1622 f_n_+_
+             1 = \frac{4n+6}{n+3}
 ? 
-! Undefined control sequence.
-<inserted text> ...el {=}\p 1\comp \llparenthesis 
-                                                  \, \Varid {gene}\,\rrparen...
-l.1680 \end{hscode}
-                   \resethooks
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1628
+.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1628
+.
+
+Missing character: There is no ² in font cmr10!
+! Double subscript.
+l.1632 f_n_
+           +_1 = f_n + \frac{6}{nÂ²+5n+6}
 ? 
-! Undefined control sequence.
-<inserted text> ... \Varid {gene}\,\rrparenthesis 
-                                                  \;\mathbf {where}{}\<[E]\\...
-l.1680 \end{hscode}
-                   \resethooks
+! Double subscript.
+l.1632 f_n_+_
+             1 = f_n + \frac{6}{nÂ²+5n+6}
 ? 
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1632
+.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1632
+.
+
+Missing character: There is no ² in font cmr10!
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1636
+.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1636
+.
+
+Missing character: There is no ² in font cmr10!
+! Double subscript.
+l.1640 f_n_
+           +_1 = f_n + \frac{6}{g_n}
+? 
+! Double subscript.
+l.1640 f_n_+_
+             1 = f_n + \frac{6}{g_n}
+? 
+! Double subscript.
+l.1643 g_n_
+           +_1 = nÂ²+7n+12
+? 
+! Double subscript.
+l.1643 g_n_+_
+             1 = nÂ²+7n+12
+? 
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1643
+.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1643
+.
+
+Missing character: There is no ² in font cmr10!
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1647
+.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1647
+.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1647
+.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 1647
+.
+
+Missing character: There is no ² in font cmr10!
+Missing character: There is no ² in font cmr10!
 [13]
+! Double subscript.
+l.1653 g_n_
+           +_1 = g_n+2n+6
+? 
+! Double subscript.
+l.1653 g_n_+_
+             1 = g_n+2n+6
+? 
+! Double subscript.
+l.1661 h_n_
+           +_1 = 2n+8
+? 
+! Double subscript.
+l.1661 h_n_+_
+             1 = 2n+8
+? 
+! Double subscript.
+l.1671 h_n_
+           +_1 = h_n+2
+? 
+! Double subscript.
+l.1671 h_n_+_
+             1 = h_n+2
+? 
+! Double subscript.
+l.1675 c_n_
+           +_1 = f_n \times c_n
+? 
+! Double subscript.
+l.1675 c_n_+_
+             1 = f_n \times c_n
+? 
+[14 <./cp2021t_media/Cn+1.png (PNG copy)>]
+! Undefined control sequence.
+l.1748   \xymatrix
+                   {
+? 
+! Undefined control sequence.
+l.1750      \ar
+               [r]^{outLT}
+? 
+! Undefined control sequence.
+l.1751      \ar
+               [d]_{\llparenthesis length \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1751      \ar[d]_{\llparenthesis
+                                   length \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1751 ...d]_{\llparenthesis length \rrparenthesis
+                                                  }
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1752 &
+        
+? 
+! Undefined control sequence.
+l.1754     \ar
+              [d]^{id + id \times length}
+? 
+! Undefined control sequence.
+l.1759     \ar
+              [l]_{[const 1, succ \cdot \pi1]}
+? 
+! Incomplete \ifcase; all text was ignored after line 1761.
+<inserted text> 
+                \fi 
+l.1761 \end{eqnarray*}
+                      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1761 \end{eqnarray*}
+                      
+? 
+! Extra alignment tab has been changed to \cr.
+<template> \egroup \endtemplate 
+                                
+l.1761 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
+                                                  \def \reserved@a {& &}\or ...
+l.1761 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1761 \end{eqnarray*}
+                      
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1761 \end{eqnarray*}
+                      
+? 
+! Missing $$ inserted.
+<to be read again> 
+                   \begingroup 
+l.1761 \end{eqnarray*}
+                      
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1761 \end{eqnarray*}
+                      
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1761 \end{eqnarray*}
+                      
+? 
+
+Underfull \hbox (badness 10000) in alignment at lines 1761--1761
+ [][][][]
+ []
+
+! Undefined control sequence.
+l.1767   \xymatrix
+                   {
+? 
+! Undefined control sequence.
+l.1769      \ar
+               [r]^{outLT}
+? 
+! Undefined control sequence.
+l.1770      \ar
+               [d]_{\llparenthesis length \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1770      \ar[d]_{\llparenthesis
+                                   length \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1770 ...d]_{\llparenthesis length \rrparenthesis
+                                                  }
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1771 &
+        
+? 
+! Undefined control sequence.
+l.1773     \ar
+              [d]_{id + id \times <avg, length>}
+? 
+! Undefined control sequence.
+l.1778     \ar
+              [l]_{[1, succ \cdot \pi2]}
+? 
+! Incomplete \ifcase; all text was ignored after line 1780.
+<inserted text> 
+                \fi 
+l.1780 \end{eqnarray*}
+                      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1780 \end{eqnarray*}
+                      
+? 
+! Extra alignment tab has been changed to \cr.
+<template> \egroup \endtemplate 
+                                
+l.1780 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
+                                                  \def \reserved@a {& &}\or ...
+l.1780 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1780 \end{eqnarray*}
+                      
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1780 \end{eqnarray*}
+                      
+? 
+! Missing $$ inserted.
+<to be read again> 
+                   \begingroup 
+l.1780 \end{eqnarray*}
+                      
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1780 \end{eqnarray*}
+                      
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1780 \end{eqnarray*}
+                      
+? 
+
+Underfull \hbox (badness 10000) in alignment at lines 1780--1780
+ [][][][]
+ []
+
+! Undefined control sequence.
+l.1785   \xymatrix
+                   {
+? 
+! Undefined control sequence.
+l.1787      \ar
+               [r]^{outLT}
+? 
+! Undefined control sequence.
+l.1788      \ar
+               [d]_{\llparenthesis avg \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1788      \ar[d]_{\llparenthesis
+                                   avg \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1788 ...ar[d]_{\llparenthesis avg \rrparenthesis
+                                                  }
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1789 &
+        
+? 
+! Undefined control sequence.
+l.1791     \ar
+              [d]_{id + id \times <avg, length>}
+? 
+! Undefined control sequence.
+l.1796     \ar
+              [l]_{[id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]}
+? 
+! Incomplete \ifcase; all text was ignored after line 1798.
+<inserted text> 
+                \fi 
+l.1798 \end{eqnarray*}
+                      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1798 \end{eqnarray*}
+                      
+? 
+! Extra alignment tab has been changed to \cr.
+<template> \egroup \endtemplate 
+                                
+l.1798 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
+                                                  \def \reserved@a {& &}\or ...
+l.1798 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1798 \end{eqnarray*}
+                      
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1798 \end{eqnarray*}
+                      
+? 
+! Missing $$ inserted.
+<to be read again> 
+                   \begingroup 
+l.1798 \end{eqnarray*}
+                      
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1798 \end{eqnarray*}
+                      
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1798 \end{eqnarray*}
+                      
+? 
+
+Underfull \hbox (badness 10000) in alignment at lines 1798--1798
+ [][][][]
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1803   $
+           <avg, length> = \llparenthesis \langle  h,k \rangle  \rrparenthes...
+
+? 
+! Undefined control sequence.
+l.1803   $ <avg, length> = \llparenthesis
+                                          \langle  h,k \rangle  \rrparenthes...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1803   $ <avg, length> = \llparenthesis \langle
+                                                   h,k \rangle  \rrparenthes...
+
+? 
+! Undefined control sequence.
+l.1803 ...sis \langle  h,k \rangle  \rrparenthesis
+                                                   $ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Incomplete \ifcase; all text was ignored after line 1804.
+<inserted text> 
+                \fi 
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1804   $
+           \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1804   $ \equiv
+                  \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Incomplete \ifcase; all text was ignored after line 1805.
+<inserted text> 
+                \fi 
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1805   $
+           <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Undefined control sequence.
+l.1805   $ <avg, length> = \llparenthesis
+                                          \langle  [id, (id + \pi_{2} * \pi_...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1805   $ <avg, length> = \llparenthesis \langle
+                                                   [id, (id + \pi_{2} * \pi_...
+
+? 
+! Undefined control sequence.
+l.1805 ... succ . \pi_{2}] \rangle  \rrparenthesis
+                                                   $ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Incomplete \ifcase; all text was ignored after line 1806.
+<inserted text> 
+                \fi 
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1806   $
+           \equiv \{ Lei da troca (28) \} $ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1806   $ \equiv
+                  \{ Lei da troca (28) \} $ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Incomplete \ifcase; all text was ignored after line 1807.
+<inserted text> 
+                \fi 
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1807   $
+           <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \l...
+
+? 
+! Undefined control sequence.
+l.1807   $ <avg, length> = \llparenthesis
+                                          [\langle id, const 1 \rangle  , \l...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1807   $ <avg, length> = \llparenthesis [\langle
+                                                   id, const 1 \rangle  , \l...
+
+? 
+! Undefined control sequence.
+l.1807 ... succ . \pi_{2} \rangle ] \rrparenthesis
+                                                   $ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1808 \end
+           {eqnarray*}
+? 
+! Incomplete \ifcase; all text was ignored after line 1808.
+<inserted text> 
+                \fi 
+l.1808 \end
+           {eqnarray*}
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1808 \end
+           {eqnarray*}
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1808 \end
+           {eqnarray*}
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1808 \end
+           {eqnarray*}
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1808 \end
+           {eqnarray*}
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1808 \end
+           {eqnarray*}
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1808 \end
+           {eqnarray*}
+? 
+[15]
+! Undefined control sequence.
+l.1829   \xymatrix
+                   {
+? 
+! Undefined control sequence.
+l.1831      \ar
+               [r]_{outLT}
+? 
+! Undefined control sequence.
+l.1832      \ar
+               [d]^{\llparenthises avg, length \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1832      \ar[d]^{\llparenthises
+                                   avg, length \rrparenthesis}
+? 
+! Undefined control sequence.
+l.1832 ...llparenthises avg, length \rrparenthesis
+                                                  }
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1833 &
+        
+? 
+! Undefined control sequence.
+l.1835     \ar
+              [d]_{id + <avg, length>^{2}}
+? 
+! Incomplete \ifcase; all text was ignored after line 1841.
+<inserted text> 
+                \fi 
+l.1841 \end{eqnarray*}
+                      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1841 \end{eqnarray*}
+                      
+? 
+! Extra alignment tab has been changed to \cr.
+<template> \egroup \endtemplate 
+                                
+l.1841 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ...e \@eqcnt \def \reserved@a {& & &}\or 
+                                                  \def \reserved@a {& &}\or ...
+l.1841 \end{eqnarray*}
+                      
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1841 \end{eqnarray*}
+                      
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1841 \end{eqnarray*}
+                      
+? 
+! Missing $$ inserted.
+<to be read again> 
+                   \begingroup 
+l.1841 \end{eqnarray*}
+                      
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1841 \end{eqnarray*}
+                      
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1841 \end{eqnarray*}
+                      
+? 
+
+Underfull \hbox (badness 10000) in alignment at lines 1841--1841
+ [][][][]
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1844   $
+           \langle avg, length \rangle = \llparenthesis \langle h, k \rangle...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1844   $ \langle
+                   avg, length \rangle = \llparenthesis \langle h, k \rangle...
+
+? 
+! Undefined control sequence.
+l.1844 ...gle avg, length \rangle = \llparenthesis
+                                                   \langle h, k \rangle \rrp...
+
+? 
+! Undefined control sequence.
+l.1844 ...esis \langle h, k \rangle \rrparenthesis
+                                                   $ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Incomplete \ifcase; all text was ignored after line 1845.
+<inserted text> 
+                \fi 
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1845   $
+           \equiv \left\{ Fokkinga (52) \right\} $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1845   $ \equiv
+                  \left\{ Fokkinga (52) \right\} $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+! Incomplete \ifcase; all text was ignored after line 1846.
+<inserted text> 
+                \fi 
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1846   \left
+              \{\begin{array}{lr}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1847     $ avg \cdot
+                       inLT = h \cdot (id + \left\langle avg, length \right\...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1848     $
+             length \cdot inLT = k \cdot (id + \left\langle avg, length \rig...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1848     $ length \cdot
+                          inLT = k \cdot (id + \left\langle avg, length \rig...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1849   \end
+             {array}\right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.1850   $
+          \equiv \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1850   $
+          \equiv \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1850   $\equiv
+                 \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+! Incomplete \ifcase; all text was ignored after line 1851.
+<inserted text> 
+                \fi 
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1851   \left
+              \{\begin{array}{lr}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1853       $avg \cdot
+                        inLT = h1$ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1854       $
+              avg \cdot inLT = h2 \cdot \left\langle avg, length \right\rang...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1854       $avg \cdot
+                        inLT = h2 \cdot \left\langle avg, length \right\rang...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1855     \end
+               {array}\right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \left 
+l.1856     \left
+                \{\begin{array}{lr}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1857       $length \cdot
+                           inLT = k1$ \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1858       $
+              length \cdot inLT = k2 \cdot \left\langle avg, length \right\r...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1858       $length \cdot
+                           inLT = k2 \cdot \left\langle avg, length \right\r...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1859     \end
+               {array}\right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \unskip 
+l.1860   \end{array}
+                    \right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.1861   $
+          \equiv \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72)...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1861   $
+          \equiv \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72)...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1861   $\equiv
+                 \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72)...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+! Incomplete \ifcase; all text was ignored after line 1862.
+<inserted text> 
+                \fi 
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1862   \left
+              \{\begin{array}{lr}
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \left 
+l.1867     \left
+                \{\begin{array}{lr}
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \unskip 
+l.1871   \end{array}
+                    \right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \equiv 
+l.1872   \equiv
+                \left\{ Def-length para LTree: contar Leaf - k1 := const 1; ...
+
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \left 
+l.1878     \left
+                \{\begin{array}{lr}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1880 ...$length (Fork (l,r)) = uncurry (+) \cdot
+                                                   \left\langle\pi2, \pi2 \r...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1881     \end
+               {array}\right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \unskip 
+l.1882   \end{array}
+                    \right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \equiv 
+l.1883   \equiv
+                \left\{ h1 := id; h2 := (+) (mul p1) (mul p2) / uncurry (+) ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1887 ...+) (mul p1) (mul p2) / uncurry (+) \cdot
+                                                   \left\langle \pi2, \pi2 \...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1888     \end
+               {array}\right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \left 
+l.1889     \left
+                \{\begin{array}{lr}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1891 ...$length (Fork (l,r)) = uncurry (+) \cdot
+                                                   \left\langle\pi2, \pi2 \r...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1892     \end
+               {array}\right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \unskip 
+l.1893   \end{array}
+                    \right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.1894   $
+          \equiv \left\{ Eq - + (27)  \right\}$\\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1894   $
+          \equiv \left\{ Eq - + (27)  \right\}$\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1894   $\equiv
+                 \left\{ Eq - + (27)  \right\}$\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+! Incomplete \ifcase; all text was ignored after line 1895.
+<inserted text> 
+                \fi 
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1895   \left
+              \{\begin{array}{lr}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1896 ...+) (mul p1) (mul p2) / uncurry (+) \cdot
+                                                   \left\langle \pi2, \pi2 \...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1897     $
+             length . inLT = [const 1, uncurry (+) \cdot \left\langle\pi2, \...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1897 ...gth . inLT = [const 1, uncurry (+) \cdot
+                                                   \left\langle\pi2, \pi2 \r...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1898   \end
+             {array}\right
+? 
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.1899   $
+          \equiv \left\{ Fokkinga (52)  \right\} $\\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1899   $
+          \equiv \left\{ Fokkinga (52)  \right\} $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1899   $\equiv
+                 \left\{ Fokkinga (52)  \right\} $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Incomplete \ifcase; all text was ignored after line 1900.
+<inserted text> 
+                \fi 
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1900   $
+          \langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1900   $\langle
+                  avg, length \rangle = \llparenthesis \langle [id, (+) (mul...
+
+? 
+! Undefined control sequence.
+l.1900 ...gle avg, length \rangle = \llparenthesis
+                                                   \langle [id, (+) (mul p1)...
+
+? 
+! Undefined control sequence.
+l.1900 ...i2 \right\rangle] \rangle \rrparenthesis
+                                                  $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Incomplete \ifcase; all text was ignored after line 1901.
+<inserted text> 
+                \fi 
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1901   $
+          \equiv \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1901   $\equiv
+                 \left\{ Lei da Troca (28)  \right\} $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Incomplete \ifcase; all text was ignored after line 1902.
+<inserted text> 
+                \fi 
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.1902   $
+          \langle avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1902   $\langle
+                  avg, length \rangle = \llparenthesis [\left\langle id, con...
+
+? 
+! Undefined control sequence.
+l.1902 ...gle avg, length \rangle = \llparenthesis
+                                                   [\left\langle id, const 1...
+
+? 
+! Undefined control sequence.
+l.1902 ...i2 \right\rangle] \rangle \rrparenthesis
+                                                  $\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1903 \end
+           {eqnarray*}
+? 
+! Incomplete \ifcase; all text was ignored after line 1903.
+<inserted text> 
+                \fi 
+l.1903 \end
+           {eqnarray*}
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.1903 \end
+           {eqnarray*}
+? 
+! Extra \or.
+\@@eqncr ... {& & &}\or \def \reserved@a {& &}\or 
+                                                  \def \reserved@a {&}\else ...
+l.1903 \end
+           {eqnarray*}
+? 
+! Extra \else.
+\@@eqncr ...@a {& &}\or \def \reserved@a {&}\else 
+                                                  \let \reserved@a \@empty \...
+l.1903 \end
+           {eqnarray*}
+? 
+
+! LaTeX Error: Too many columns in eqnarray environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1903 \end
+           {eqnarray*}
+? 
+! Extra \fi.
+\@@eqncr ...mns in eqnarray environment}\@ehc \fi 
+                                                  \reserved@a \if@eqnsw \@eq...
+l.1903 \end
+           {eqnarray*}
+? 
+! Missing { inserted.
+<inserted text> 
+                {
+l.1903 \end
+           {eqnarray*}
+? 
+
+Overfull \hbox (571.89189pt too wide) in alignment at lines 1843--1903
+ [][][] []
+ []
+
+[16]
+! Undefined control sequence.
+<inserted text> ...el {=}\p 1\comp \llparenthesis 
+                                                  \, \Varid {gene}\,\rrparen...
+l.1928 \end{hscode}
+                   \resethooks
+? 
+! Undefined control sequence.
+<inserted text> ... \Varid {gene}\,\rrparenthesis 
+                                                  \;\mathbf {where}{}\<[E]\\...
+l.1928 \end{hscode}
+                   \resethooks
+? 
+! Undefined control sequence.
+<inserted text> ...el {=}\p 1\comp \llparenthesis 
+                                                  \, \Varid {gene}\,\rrparen...
+l.1928 \end{hscode}
+                   \resethooks
+? 
+! Undefined control sequence.
+<inserted text> ... \Varid {gene}\,\rrparenthesis 
+                                                  \;\mathbf {where}{}\<[E]\\...
+l.1928 \end{hscode}
+                   \resethooks
+? 
+! Undefined control sequence.
+<inserted text> ...el {=}\p 1\comp \llparenthesis 
+                                                  \, \Varid {gene}\,\rrparen...
+l.1928 \end{hscode}
+                   \resethooks
+? 
+! Undefined control sequence.
+<inserted text> ... \Varid {gene}\,\rrparenthesis 
+                                                  \;\mathbf {where}{}\<[E]\\...
+l.1928 \end{hscode}
+                   \resethooks
+? 
 No file cp2021t.ind.
 No file cp2021t.bbl.
-[14 <./cp2021t_media/Cn+1.png (PNG copy)>] (./cp2021t.aux)
+[17] (./cp2021t.aux)
 Package rerunfilecheck Info: File `cp2021t.out' has not changed.
 (rerunfilecheck)             Checksum: 7ABFEEFBC6EDEE4EAEC2BDEF142178CE;514.
 
@@ -827,13 +2656,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10683 strings out of 479383
- 163750 string characters out of 5875830
+ 10687 strings out of 479383
+ 163790 string characters out of 5875830
  516922 words of memory out of 5000000
- 27469 multiletter control sequences out of 15000+600000
+ 27470 multiletter control sequences out of 15000+600000
  436398 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,12n,74p,370b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,18n,74p,447b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -854,10 +2683,10 @@ tic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr
 /share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palati
 no/uplri8a.pfb>
-Output written on cp2021t.pdf (14 pages, 1312929 bytes).
+Output written on cp2021t.pdf (17 pages, 1329531 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
  75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

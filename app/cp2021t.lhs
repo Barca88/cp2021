@@ -127,15 +127,16 @@
 
 \begin{center}\large
 \begin{tabular}{ll}
-\textbf{Grupo} nr. & 999 (preencher)
+\textbf{Grupo} nr. & 102
 \\\hline
-a11111 & Nome1 (preencher)
+a80580 & Pedro Rafael Bernardo Medeiros
 \\
-a22222 & Nome2 (preencher)
+a75480 & Marco Matias Pereira Gonçalves
 \\
-a33333 & Nome3 (preencher)
+a80824 & André Teixeira da Costa
 \\
-a44444 & Nome4 (preencher, se aplicável, ou apagar)
+a74813 & André Filipe Araújo Pereira de Sousa
+
 \end{tabular}
 \end{center}
 
@@ -703,7 +704,7 @@ Verifique as suas funções testando a propriedade seguinte:
 A média de uma lista não vazia e de uma \LTree\ com os mesmos elementos coincide,
 a menos de um erro de 0.1 milésimas:
 \begin{code}
-prop_avg :: Ord a => [a] -> Property
+--prop_avg :: Ord a => [a] -> Property
 prop_avg = nonempty .==>. diff .<=. const 0.000001 where
    diff l = avg l - (avgLTree . genLTree) l
    genLTree = anaLTree lsplit
@@ -1042,7 +1043,81 @@ ad_gen = undefined
 \end{code}
 
 \subsection*{Problema 2}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\textwidth]{cp2021t_media/Cn+1.png}
+  \caption{Problema 2 Calculos para chegar á formula obtida}
+\end{figure}
 
+
+Através dos Calculos da imagem obtemos:
+\begin{eqnarray}
+c_n_+_1 = \frac{4n+2}{n+2} \times C_n
+\end{eqnarray}
+Agora sendo
+\begin{eqnarray}
+f_n = \frac{4n+2}{n+2} 
+\\
+f_0 = 1
+\end{eqnarray}
+Temos:
+\begin{eqnarray}
+f_n_+_1 = \frac{4n+6}{n+3}
+\end{eqnarray}
+Agora sendo: 
+\begin{eqnarray}
+\frac{4n+6}{n+3} = \frac{4n+2}{n+2}+y 
+\\
+\Leftrightarrow y = \frac{6}{n²+5n+6}
+\end{eqnarray}
+Então:
+\begin{eqnarray}
+f_n_+_1 = f_n + \frac{6}{n²+5n+6}
+\end{eqnarray}
+Sendo:
+\begin{eqnarray}
+g_n = n²+5n+6 
+\\
+g_0 = 6 
+\\
+f_n_+_1 = f_n + \frac{6}{g_n}
+\end{eqnarray}
+\begin{eqnarray}
+g_n_+_1 = n²+7n+12
+\end{eqnarray}
+Então:
+\begin{eqnarray}
+n²+7n+12 = n²+5n+6+y 
+\\ 
+\Leftrightarrow y = 2n+6
+\end{eqnarray}
+Portanto:
+\begin{eqnarray}
+g_n_+_1 = g_n+2n+6
+\end{eqnarray}
+Sendo:
+\begin{eqnarray}
+h_n = 2n+6 
+\\
+h_0 = 6 
+\\
+h_n_+_1 = 2n+8
+\end{eqnarray}
+Então:
+\begin{eqnarray}
+2n+8 = 2n+6+y 
+\\
+\Leftrightarrow y = 2
+\end{eqnarray}
+Logo:
+\begin{eqnarray}
+h_n_+_1 = h_n+2 
+\\
+c_0 = 1 
+\\
+c_n_+_1 = f_n \times c_n
+\end{eqnarray}
+O que Resultou no seguinte código:
 \begin{code}
 cat n = prj . for loop init $ n where
   loop(c,f,g,h) = (f * c,f + ( 6 % g), g + h, h + 2)
@@ -1050,14 +1125,7 @@ cat n = prj . for loop init $ n where
   prj(a,b,c,d) = numerator a
 
 \end{code}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.8\textwidth]{cp2021t_media/Cn+1.png}
-  \caption{Calculos para chegar á formula obtida}
-\end{figure}
-g = n ;
-g 0 = 0 ;
-g n+1 = n+1
+
 \subsection*{Problema 3}
 
 \begin{code}
@@ -1079,14 +1147,184 @@ Solução para listas não vazias:
 \begin{code}
 avg = p1.avg_aux
 \end{code}
+Conforme apresentado no enunciado do problema, a média de uma lista não vazia pode ser calculada a partir da seguinte expressão:
+
+\begin{quote}
+  	$avg (a:x) = \frac 1 {k+1}(a+\sum_{i=1}^{k} x_i) = \frac{a+k(avg\ x)}{k+1}$ para $k=length\ x$
+\end{quote}
+
+Logo $avg$ está em recursividade mútua com $length$. A partir desta afirmação, começa-se por apresentar a definição de avg e length:
+\begin{quote}
+  $avg [x] = x$ \\
+  $avg (h : t) = (h + k * (avg t)) / (k+1) where k = length t$ \\
+  $length [x] = 1$ \\
+  $length (h:t) = succ . length t$
+\end{quote}
+
+Caso se represente esta formulação sob a forma de diagrama, facilmente se conclui que não se trata de um catamorfimo. No entanto, apresentaremos length para listas não vazias:
+
+\begin{eqnarray*}
+  \xymatrix {
+  | A^{+} |
+     \ar[r]^{outLT}
+     \ar[d]_{\llparenthesis length \rrparenthesis}
+&
+  | A + A \times A^{+} |
+    \ar[d]^{id + id \times length}
+\\
+  |Nat0|
+&
+  |A + A \times Nat0|
+    \ar[l]_{[const 1, succ \cdot \pi1]}
+  }
+\end{eqnarray*}
+
+A partir deste ponto, podemos modificar a função length para que também calcule a média da lista. 
+No final, pode-se simplesmente ignorar tal cálculo através do cancelamento-x.
+
+\begin{eqnarray*}
+  \xymatrix {
+  | A^{+} |
+     \ar[r]^{outLT}
+     \ar[d]_{\llparenthesis length \rrparenthesis}
+&
+  | A + A \times A^{+} |
+    \ar[d]_{id + id \times <avg, length>}
+\\
+  |Nat0|
+&
+  |A + A \times (R, Nat0)|
+    \ar[l]_{[1, succ \cdot \pi2]}
+  }
+\end{eqnarray*}
+
+Pode-se, agora derivar também o cálculo avg:
+
+\begin{eqnarray*}
+  \xymatrix {
+  | A^{+} |
+     \ar[r]^{outLT}
+     \ar[d]_{\llparenthesis avg \rrparenthesis}
+&
+  | A + A \times A^{+} |
+    \ar[d]_{id + id \times <avg, length>}
+\\
+  |R|
+&
+  | A + A \times (R, Nat0) |
+    \ar[l]_{[id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]}
+  }
+\end{eqnarray*}
+
+Utilizando a lei da recursividade mútua, pode-se desenvolver que:
+
+\begin{eqnarray*}
+  $ <avg, length> = \llparenthesis \langle  h,k \rangle  \rrparenthesis $ \\
+  $ \equiv \{ h := [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)]; k := [1, succ . \pi_{2}] \} $ \\
+  $ <avg, length> = \llparenthesis \langle  [id, (id + \pi_{2} * \pi_{1}) / (\pi_{2} + 1)],[1, succ . \pi_{2}] \rangle  \rrparenthesis $ \\
+  $ \equiv \{ Lei da troca (28) \} $ \\
+  $ <avg, length> = \llparenthesis [\langle id, const 1 \rangle  , \langle  (\pi_{2} * \pi_{1}) / (\pi_{2} + 1), succ . \pi_{2} \rangle ] \rrparenthesis $ \\
+\end{eqnarray*}
 
 \begin{code}
-avg_aux = undefined
+avg_aux [x] = (x,1)
+avg_aux (h:t) = ((h + (a * b)) / (succ b), succ b)
+              where (a,b) = avg_aux t
 \end{code}
 Solução para árvores de tipo \LTree:
+
+Solução para árvores de tipo \LTree:
+
+Comecemos por apresentar o diagrama do catamorfismo.
+
+\begin{eqnarray*}
+  \xymatrix {
+  |LTree A|
+     \ar[r]_{outLT}
+     \ar[d]^{\llparenthises avg, length \rrparenthesis}
+&
+  |A + (LTree A)^{2}|
+    \ar[d]_{id + <avg, length>^{2}}
+\\
+  |A \times B|
+&
+  |A + (X, Nat0) \times (X, Nat0)|
+  }
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  $ \langle avg, length \rangle = \llparenthesis \langle h, k \rangle \rrparenthesis $ \\
+  $ \equiv \left\{ Fokkinga (52) \right\} $\\
+  \left\{\begin{array}{lr}
+    $ avg \cdot inLT = h \cdot (id + \left\langle avg, length \right\rangle ^{2}  ) $\\
+    $ length \cdot inLT = k \cdot (id + \left\langle avg, length \right\rangle ^{2}  ) $\\
+  \end{array}\right
+  $\equiv \left\{ Eq - + (27); Natural-id (1) \right\}$ \\
+  \left\{\begin{array}{lr}
+    \left\{\begin{array}{lr}
+      $avg \cdot inLT = h1$ \\
+      $avg \cdot inLT = h2 \cdot \left\langle avg, length \right\rangle ^{2}$\\
+    \end{array}\right
+    \left\{\begin{array}{lr}
+      $length \cdot inLT = k1$ \\
+      $length \cdot inLT = k2 \cdot \left\langle avg, length \right\rangle ^{2}$\\
+    \end{array}\right
+  \end{array}\right
+  $\equiv \left\{ Def-inLT; Igualdade extensional (71); Def-comp (72); Def-x (77); Def-split (76) \right\} $\\
+  \left\{\begin{array}{lr}
+    \left\{\begin{array}{lr}
+      $avg (Leaf a) = h1 a$ \\
+      $avg (Fork (l,r)) = h2 ((avg l, length l), (avg r), length r)$ \\
+    \end{array}\right
+    \left\{\begin{array}{lr}
+      $length (Leaf a) = k1 1$\\
+      $length (Fork (l,r)) = k2 ((avg l, length l), (avg r), length r)$\\
+    \end{array}\right
+  \end{array}\right
+  \equiv \left\{ Def-length para LTree: contar Leaf - k1 := const 1; k2 = uncurry (+) \cdot \left\langle \pi2, \pi2\right\rangle; def-const   \right\} \\
+  \left\{\begin{array}{lr}
+    \left\{\begin{array}{lr}
+      $avg (Leaf a) = h1 a$ \\
+      $avg (Fork (l,r)) = h2 ((avg l, length l), (avg r), length r)$ \\
+    \end{array}\right
+    \left\{\begin{array}{lr}
+      $length (Leaf a) = 1$ \\
+      $length (Fork (l,r)) = uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle((avg l, length l), (avg r), length r)$ \\
+    \end{array}\right
+  \end{array}\right
+  \equiv \left\{ h1 := id; h2 := (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle; Def-id (73)  \right\} \\
+  \left\{\begin{array}{lr}
+    \left\{\begin{array}{lr}
+      $avg (Leaf a) = a$ \\
+      $avg (Fork (l,r)) =  (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle ((avg l, length l), (avg r), length r)$ \\
+    \end{array}\right
+    \left\{\begin{array}{lr}
+      $length (Leaf a) = 1$ \\
+      $length (Fork (l,r)) = uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle((avg l, length l), (avg r), length r)$ \\
+    \end{array}\right
+  \end{array}\right
+  $\equiv \left\{ Eq - + (27)  \right\}$\\
+  \left\{\begin{array}{lr}
+    $ avg . inLT = [id, (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] \cdot (id + \left\langle avg, length \right\rangle ^{2})$ \\
+    $ length . inLT = [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \cdot (id + \left\langle avg, length \right\rangle ^{2})$ \\
+  \end{array}\right
+  $\equiv \left\{ Fokkinga (52)  \right\} $\\
+  $\langle avg, length \rangle = \llparenthesis \langle [id, (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] , [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \rangle \rrparenthesis$\\
+  $\equiv \left\{ Lei da Troca (28)  \right\} $\\
+  $\langle avg, length \rangle = \llparenthesis [\left\langle id, const 1 \right\rangle , \left\langle (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle \right\rangle  (+) (mul p1) (mul p2) / uncurry (+) \cdot \left\langle \pi2, \pi2 \right\rangle] , [const 1, uncurry (+) \cdot \left\langle\pi2, \pi2 \right\rangle] \rangle \rrparenthesis$\\
+\end{eqnarray*}
+
+Optou-se por utilizar a versão \textit{pointwise} para o calculo da média entre dois ramos, nomeadamente através da média ponderada:
+
+\begin{eqnarray*}
+  avg ((avgl, ll),(avgr, lr)) = ((avgl * ll) + (avgr * lr)) / (ll + lr)
+\end{eqnarray*}
+
 \begin{code}
 avgLTree = p1.cataLTree gene where
-   gene = undefined
+   g  ((avgl, ll),(avgr, lr)) = ((avgl * ll) + (avgr * lr)) / (ll + lr)
+   -- t = uncurry (+) . mulUnc >< mulUnc
+   gene = either (split id (const 1)) (split g ((uncurry (+)) . (p2 >< p2)))
 \end{code}
 
 \subsection*{Problema 5}
