@@ -1103,23 +1103,25 @@ Assim \textbf{recExpAr} fica definida como
 \begin{code}
 recExpAr h = baseExpAr id id id h h id h
 \end{code}
+\newline
+
+\textbf{-g\_eval\_exp}
+\newline
+Tendo já encontrado o diagrama que permite ver como as trabsformações podem afetar \textbf{ExpAr},neste caso ira se ver a relação com \textbf{eval\_exp}.
 
 
-\textbf{-g_eval-exp}
-Tendo já encontrado o diagrama que permite ver como as trabsformações podem afetar \textbf{ExpAr},
-neste caso ira se ver a relação com \textbf{eval_exp}.
-
-
-Graças a este diagram, conseguimos determinar o gene de \textbf{eval-exp}.
-Assim, \textbf{g_val_exp} fica definido como:
+Graças a este diagram, conseguimos determinar o gene de \textbf{eval\_exp}. Assim, \textbf{g\_val\_exp} fica definido como:
 
 \begin{code}
 g_eval_exp a = either (const a) (either id (either (expArit) (uNitar)))
 expArit (Sum, (m,o)) = (+) m o
 expArit (Product, (m,o)) = (*) m o
 uNitar(Negate, a) = -a
-eNitar (E,n) = (expd n)
+uNitar (E,n) = (expd n)
 \end{code}
+
+
+\textbf{-optimize\_eval}
 
 
 \begin{code}

@@ -1647,22 +1647,32 @@ Assim \textbf{recExpAr} fica definida como
 \>[B]{}\Varid{recExpAr}\;\Varid{h}\mathrel{=}\Varid{baseExpAr}\;\Varid{id}\;\Varid{id}\;\Varid{id}\;\Varid{h}\;\Varid{h}\;\Varid{id}\;\Varid{h}{}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
+\newline
 
+\textbf{-g\_eval\_exp}
+\newline
+Tendo já encontrado o diagrama que permite ver como as trabsformações podem afetar \textbf{ExpAr},neste caso ira se ver a relação com \textbf{eval\_exp}.
+
+
+Graças a este diagram, conseguimos determinar o gene de \textbf{eval\_exp}. Assim, \textbf{g\_val\_exp} fica definido como:
 
 \begin{hscode}\SaveRestoreHook
 \column{B}{@{}>{\hspre}l<{\hspost}@{}}%
 \column{E}{@{}>{\hspre}l<{\hspost}@{}}%
-\>[B]{}\Varid{g\char95 eval\char95 exp}\;\Varid{n}\mathrel{=}\alt{\underline{\Varid{n}}}{\alt{\Varid{id}}{\alt{\Varid{expArit}}{\Varid{expoNega}}}}{}\<[E]%
+\>[B]{}\Varid{g\char95 eval\char95 exp}\;\Varid{a}\mathrel{=}\alt{\underline{\Varid{a}}}{\alt{\Varid{id}}{\alt{\Varid{expArit}}{\Varid{uNitar}}}}{}\<[E]%
 \\
 \>[B]{}\Varid{expArit}\;(\Conid{Sum},(\Varid{m},\Varid{o}))\mathrel{=}(\mathbin{+})\;\Varid{m}\;\Varid{o}{}\<[E]%
 \\
 \>[B]{}\Varid{expArit}\;(\Conid{Product},(\Varid{m},\Varid{o}))\mathrel{=}(\mathbin{*})\;\Varid{m}\;\Varid{o}{}\<[E]%
 \\
-\>[B]{}\Varid{expoNega}\;(\Conid{Negate},\Varid{n})\mathrel{=}\mathbin{-}\Varid{n}{}\<[E]%
+\>[B]{}\Varid{uNitar}\;(\Conid{Negate},\Varid{a})\mathrel{=}\mathbin{-}\Varid{a}{}\<[E]%
 \\
-\>[B]{}\Varid{expoNega}\;(\Conid{E},\Varid{n})\mathrel{=}(\Varid{expd}\;\Varid{n}){}\<[E]%
+\>[B]{}\Varid{uNitar}\;(\Conid{E},\Varid{n})\mathrel{=}(\Varid{expd}\;\Varid{n}){}\<[E]%
 \ColumnHook
 \end{hscode}\resethooks
+
+
+\textbf{-optimize\_eval}
 
 
 \begin{hscode}\SaveRestoreHook
